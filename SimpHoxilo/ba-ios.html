@@ -15,8 +15,11 @@
             background-image: url("https://moewalls.com/wp-content/uploads/2024/02/takanashi-hoshino-in-class-looking-at-the-sky-thumb.jpg");
             background-size: cover;
             background-repeat: no-repeat;
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
-            color: white; /* Set default text color to white */
+            background-attachment: fixed;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            line-height: 1.6; /* Increased line height for better readability */
         }
 
         .container {
@@ -26,22 +29,23 @@
         }
 
         .card {
-            background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
+            background-color: rgba(34, 34, 34, 0.8);
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
-            backdrop-filter: blur(5px); /* Apply blur effect */
+            backdrop-filter: blur(5px);
         }
 
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            color: white; /* White heading */
+            color: white;
         }
 
         ul {
             list-style-type: disc;
             padding-left: 20px;
+            line-height: 1.6; /* Increased line height for list items */
         }
 
         a {
@@ -57,52 +61,67 @@
             background-color: rgba(17, 17, 17, 0.8);
             padding: 10px 0;
             border-bottom: 1px solid #333;
-            backdrop-filter: blur(10px); /* Blur for navbar */
-            border-radius: 10px; /* Rounded corners for navbar */
-            margin-bottom: 20px; /* Add some space below navbar */
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav .container {
             display: flex;
-            justify-content: center; /* Center the logo */
+            justify-content: center;
             align-items: center;
         }
 
         nav .logo {
             font-size: 1.5em;
             font-weight: bold;
-            color: white; /* White logo text */
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .logo:hover {
+            text-decoration: none;
         }
 
         /* ... more styles as needed ... */
         .rounded-full {
-            border-radius: 9999px; /* Make it fully rounded */
+            border-radius: 9999px;
         }
+
         .text-xl {
-            font-size: 1.25rem; /* Example size, adjust as needed */
+            font-size: 1.25rem;
             line-height: 1.75rem;
         }
+
         .mb-4 {
             margin-bottom: 1rem;
         }
+
         .px-2\.5 {
             padding-left: 0.625rem;
             padding-right: 0.625rem;
         }
+
         .py-0\.5 {
             padding-top: 0.125rem;
             padding-bottom: 0.125rem;
         }
+
         .text-xs {
             font-size: 0.75rem;
             line-height: 1rem;
         }
+
         .font-semibold {
             font-weight: 600;
         }
+
         .ml-2 {
             margin-left: 0.5rem;
         }
+
         .align-middle {
             vertical-align: middle;
         }
@@ -122,11 +141,10 @@
         </h1>
 
         <div class="card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WwuMa-ADaOU?si=K6o-NvlbSi3gCaDb" title="YouTube video player"
-                frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WwuMa-ADaOU?si=K6o-NvlbSi3gCaDb"
+                title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                style="border-radius: 10px;"></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 10px;"></iframe>
         </div>
 
         <div class="card">
