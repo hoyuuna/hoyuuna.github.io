@@ -1,66 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" class="dark" style="color-scheme: dark;" data-theme="">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="https://i.imgur.com/Iiv0ZrK.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hướng dẫn tải Blue Archive trên iOS - Simp Hoxilo</title>
-   
+
     <style>
-        /* Basic Styling - You'll likely want to expand on this */
+        /* Import Montserrat font */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
         body {
-  background-image: url("https://moewalls.com/wp-content/uploads/2024/02/takanashi-hoshino-in-class-looking-at-the-sky-thumb.jpg");
-  background-size: cover; /* Để hình nền bao phủ toàn bộ trang web */
-  background-repeat: no-repeat; /* Để hình nền không lặp lại */
+            background-image: url("https://moewalls.com/wp-content/uploads/2024/02/takanashi-hoshino-in-class-looking-at-the-sky-thumb.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+            color: white; /* Set default text color to white */
         }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
         }
+
         .card {
-            background-color: #222; /* Example card background */
+            background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
+            backdrop-filter: blur(5px); /* Apply blur effect */
         }
+
         h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: white; /* White heading */
         }
+
         ul {
             list-style-type: disc;
             padding-left: 20px;
         }
+
         a {
-            color: #00a0e9; /* Example link color */
+            color: #00a0e9;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         nav {
-          background-color: rgba(17, 17, 17, 0.8); /* Example semi-transparent dark background */
-          padding: 10px 0; /* Add some padding */
-          border-bottom: 1px solid #333; /* Optional border */
+            background-color: rgba(17, 17, 17, 0.8);
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            backdrop-filter: blur(10px); /* Blur for navbar */
+            border-radius: 10px; /* Rounded corners for navbar */
+            margin-bottom: 20px; /* Add some space below navbar */
         }
+
         nav .container {
-          display: flex; /* Use flexbox for layout */
-          justify-content: space-between; /* Align items to start and end */
-          align-items: center; /* Vertically center items */
+            display: flex;
+            justify-content: center; /* Center the logo */
+            align-items: center;
         }
+
         nav .logo {
-          font-size: 1.5em; /* Adjust logo size */
-          font-weight: bold;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white; /* White logo text */
         }
+
         /* ... more styles as needed ... */
+        .rounded-full {
+            border-radius: 9999px; /* Make it fully rounded */
+        }
+        .text-xl {
+            font-size: 1.25rem; /* Example size, adjust as needed */
+            line-height: 1.75rem;
+        }
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        .px-2\.5 {
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+        }
+        .py-0\.5 {
+            padding-top: 0.125rem;
+            padding-bottom: 0.125rem;
+        }
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem;
+        }
+        .font-semibold {
+            font-weight: 600;
+        }
+        .ml-2 {
+            margin-left: 0.5rem;
+        }
+        .align-middle {
+            vertical-align: middle;
+        }
     </style>
 </head>
+
 <body>
     <nav>
-      <div class="container">
-        <a href="https://hoyuuna.github.io/" class="logo">Hoyuuna</a>
-      </div>
+        <div class="container">
+            <a href="https://hoyuuna.github.io/" class="logo">Hoyuuna</a>
+        </div>
     </nav>
 
     <div class="container">
@@ -69,17 +122,24 @@
         </h1>
 
         <div class="card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WwuMa-ADaOU?si=K6o-NvlbSi3gCaDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 10px;"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WwuMa-ADaOU?si=K6o-NvlbSi3gCaDb" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                style="border-radius: 10px;"></iframe>
         </div>
 
         <div class="card">
             <p class="text-xl mb-4"><b>Hướng dẫn tải bằng văn bản</b></p>
             <ul>
                 <li>Chuyển vùng App Store từ Việt Nam qua Singapore trong cài đặt tài khoản Apple</li>
-                <li>Tải <a href="https://apps.apple.com/us/app/blue-archive/id1571873795"><b>Blue Archive</b></a> (không vào game)</li>
-                <li>Tải <a href="https://apps.apple.com/us/app/turbo-vpn-private-browser/id1365309175"><b>Turbo VPN</b></a> hoặc bất kì phần mềm VPN nào khác</li>
+                <li>Tải <a href="https://apps.apple.com/us/app/blue-archive/id1571873795"><b>Blue Archive</b></a> (không
+                    vào game)</li>
+                <li>Tải <a href="https://apps.apple.com/us/app/turbo-vpn-private-browser/id1365309175"><b>Turbo
+                        VPN</b></a> hoặc bất kì phần mềm VPN nào khác</li>
                 <li>Kích hoạt VPN và vào game tải 400MB file đầu game</li>
-                <li>Nếu game hiện Service is not supported in this region mà không có icon X thì nhấn vào khoảng không góc trên bên phải màn hình</li>
+                <li>Nếu game hiện Service is not supported in this region mà không có icon X thì nhấn vào khoảng không
+                    góc trên bên phải màn hình</li>
                 <li>Đăng nhập, sau khi đã đăng nhập xong tắt VPN</li>
                 <li>Tải tiếp 10GB file game và vào chơi</li>
             </ul>
@@ -87,9 +147,11 @@
 
         <div class="card">
             <p class="text-xl mb-4"><b>Cần hỗ trợ?</b></p>
-            <p>Tham gia server Discord Hang ổ simp Hoxilo tại <a href="https://discord.gg/8UYj4QzmQP"><b>đây</b></a></p>
+            <p>Tham gia server Discord Hang ổ simp Hoxilo tại <a
+                    href="https://discord.gg/8UYj4QzmQP"><b>đây</b></a></p>
         </div>
     </div>
 
 </body>
+
 </html>
