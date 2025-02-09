@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="https://i.imgur.com/Iiv0ZrK.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tra cứu nhân vật</title>
+    <title>Tra cứu nhân vật - Hoyuuna</title>
 
     <style>
         /* Import font chữ */
@@ -37,6 +37,23 @@
             margin-bottom: 20px;
             backdrop-filter: blur(5px);
         }
+
+        .warning-card { /* Style cho bảng cảnh báo */
+            background-color: rgba(255, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 0, 0, 0.8);
+        }
+
+        .warning-card p {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
 
         h1 {
             text-align: center;
@@ -81,25 +98,25 @@
         }
 
         #searchInput {
-            width: 100%; /* Chiều rộng full */
+            width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
-            box-sizing: border-box; /* Để padding không làm tăng chiều rộng */
+            box-sizing: border-box;
         }
 
         #result {
             margin-top: 20px;
         }
 
-        #result .character { /* CSS cho từng kết quả */
+        #result .character {
             margin-bottom: 10px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.7); /* Nền tối hơn cho kết quả */
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
         #result img {
@@ -125,9 +142,13 @@
             <input type="text" id="searchInput" placeholder="Nhập tên nhân vật">
         </div>
 
+        <div class="card warning-card">  <p><b>Thông tin chỉ mang tính chất tham khảo. Chúng tôi không chịu trách nhiệm về bất kỳ hậu quả nào phát sinh từ việc sử dụng thông tin này</b></p>
+        </div>
+
         <div class="card" id="result"></div>
     </div>
 
-    <script src="characterSearch.js"></script> </body>
+    <script src="characterSearch.js"></script>
+</body>
 
 </html>
