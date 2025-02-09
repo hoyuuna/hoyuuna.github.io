@@ -14,19 +14,10 @@ fetch('characterData.json')
           return characterName.includes(searchTerm) || searchTerm.split(" ").every(word => characterName.includes(word));
         });
 
-        // Sắp xếp kết quả theo bảng chữ cái
+        // Sắp xếp kết quả theo bảng chữ cái, ví dụ "hina" trước "hinata"
         filteredCharacters.sort((a, b) => {
-          const nameA = a.name.toLowerCase();
-          const nameB = b.name.toLowerCase();
-          if (nameA < nameB) {
-            return -1;
-          }
-          if (nameA > nameB) {
-            return 1;
-          }
-          return 0; // Hai tên giống nhau
+          return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
         });
-
 
         if (filteredCharacters.length > 0) {
           filteredCharacters.forEach(character => {
