@@ -14,9 +14,9 @@ fetch('characterData.json')
           return characterName.includes(searchTerm) || searchTerm.split(" ").every(word => characterName.includes(word));
         });
 
-        // Sắp xếp kết quả theo bảng chữ cái, ví dụ "hina" trước "hinata"
+        // Sắp xếp kết quả theo bảng chữ cái, ví dụ "hina" trước "hinata" và "chinat" trước "hina"
         filteredCharacters.sort((a, b) => {
-          return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+          return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), undefined, { sensitivity: 'base' });
         });
 
         if (filteredCharacters.length > 0) {
