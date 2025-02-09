@@ -14,10 +14,17 @@ fetch('characterData.json')
           return characterName.includes(searchTerm) || searchTerm.split(" ").every(word => characterName.includes(word));
         });
 
-        // Sắp xếp kết quả theo bảng chữ cái, ví dụ "hina" trước "hinata" và "chinat" trước "hina"
+        // Sắp xếp kết quả theo độ khớp
         filteredCharacters.sort((a, b) => {
-          return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), undefined, { sensitivity: 'base' });
+          const aName = a.name.toLowerCase();
+          const bName = b.name.toLowerCase();
+
+          const aMatch = calculateMatchScore(aName, searchTerm);
+          const bMatch = calculateMatchScore(bName, searchTerm);
+
+          return bMatch - aMatch; // Sắp xếp giảm dần theo điểm khớp
         });
+
 
         if (filteredCharacters.length > 0) {
           filteredCharacters.forEach(character => {
@@ -37,4 +44,34 @@ fetch('characterData.json')
         }
       }
     });
+
+    // Hàm tính điểm khớp
+    function calculateMatchScore(characterName, searchTerm) {
+      let score = 0;
+
+      if (characterName === searchTerm) {
+        return 100; // Khớp hoàn hảo
+      }
+
+      if (characterName.startsWith(searchTerm)) {
+        score += 75; // Khớp ở đầu
+      }
+
+      if (characterName.includes(searchTerm)) {
+        score += 50; // Khớp một phần
+      }
+
+      const searchTermWords = searchTerm.split(" ");
+      const characterNameWords = characterName.split(" ");
+
+      for (const searchWord of searchTermWords) {
+        for (const characterWord of characterNameWords) {
+          if (characterWord.includes(searchWord)) {
+            score += 25; // Khớp từ
+          }
+        }
+      }
+
+      return score;
+    }
   });
