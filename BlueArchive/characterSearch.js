@@ -17,7 +17,7 @@ fetch('characterData.json') // Lấy dữ liệu từ file characterData.json
           filteredCharacters.forEach(character => { // Duyệt qua các nhân vật tìm được
             const characterDiv = document.createElement('div'); // Tạo thẻ div cho mỗi nhân vật
             characterDiv.classList.add('character'); // Thêm class 'character' cho thẻ div
-            characterDiv.innerHTML = ` // Hiển thị thông tin nhân vật
+            characterDiv.innerHTML = `
               <h2>${character.name}</h2>
               <p>Độ hiếm: ${character.rarity}</p>
               <p>Vai trò: ${character.role}</p>
