@@ -14,6 +14,20 @@ fetch('characterData.json')
           return characterName.includes(searchTerm) || searchTerm.split(" ").every(word => characterName.includes(word));
         });
 
+        // Sắp xếp kết quả theo bảng chữ cái
+        filteredCharacters.sort((a, b) => {
+          const nameA = a.name.toLowerCase();
+          const nameB = b.name.toLowerCase();
+          if (nameA < nameB) {
+            return -1;
+          }
+          if (nameA > nameB) {
+            return 1;
+          }
+          return 0; // Hai tên giống nhau
+        });
+
+
         if (filteredCharacters.length > 0) {
           filteredCharacters.forEach(character => {
             const characterDiv = document.createElement('div');
