@@ -5,18 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="https://i.imgur.com/Iiv0ZrK.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hướng dẫn tải Blue Archive trên iOS - Simp Hoxilo</title>
+    <title>Hướng dẫn tải Blue Archive trên Windows - Simp Hoxilo</title>
 
     <style>
-        /* Import Montserrat font */
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        /* Import font chữ */
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
+        /* CSS cho toàn trang web */
         body {
             background-image: url("https://moewalls.com/wp-content/uploads/2024/02/takanashi-hoshino-in-class-looking-at-the-sky-thumb.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Be Vietnam Pro', sans-serif;
             color: white;
             margin: 0;
             line-height: 1.6;
@@ -34,6 +36,22 @@
             padding: 20px;
             margin-bottom: 20px;
             backdrop-filter: blur(5px);
+        }
+
+        .warning-card {
+            background-color: rgba(255, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 0, 0, 0.8);
+        }
+
+        .warning-card p {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            margin: 0;
         }
 
         h1 {
@@ -81,59 +99,29 @@
             font-weight: bold;
             color: white;
             text-decoration: none;
+            font-family: 'League Spartan', sans-serif;
         }
 
         nav .logo:hover {
             text-decoration: none;
         }
 
-        .rounded-full {
-            border-radius: 9999px;
-        }
-
-        .text-xl {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-        }
-
-        .mb-4 {
-            margin-bottom: 1rem;
-        }
-
-        .px-2\.5 {
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-        }
-
-        .py-0\.5 {
-            padding-top: 0.125rem;
-            padding-bottom: 0.125rem;
-        }
-
-        .text-xs {
-            font-size: 0.75rem;
-            line-height: 1rem;
-        }
-
-        .font-semibold {
-            font-weight: 600;
-        }
-
-        .ml-2 {
-            margin-left: 0.5rem;
-        }
-
-        .align-middle {
-            vertical-align: middle;
+        /* CSS cho video responsive và bo tròn cạnh */
+        .card iframe {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+            border: 0;
+            border-radius: 8px;
         }
 
         .card iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-width: 560px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 10px;
+            height: 100%;
         }
     </style>
 </head>
@@ -146,27 +134,33 @@
     </nav>
 
     <div class="container">
-        <h1>Hướng dẫn tải Blue Archive Global dành cho iOS
-        </h1>
+        <h1>Hướng dẫn tải Blue Archive Global dành cho Windows</h1>
 
         <div class="card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WwuMa-ADaOU?si=K6o-NvlbSi3gCaDb"
-                title="YouTube video player" frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7Zy4RW4DmfU?si=qb29tvBLten5RRdG" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="card warning-card">
+            <p>Lưu ý: Hướng dẫn này có thể gây ra khó khăn cho nhiều người, khuyến cáo xem video</p>
         </div>
 
         <div class="card">
             <p class="text-xl mb-4"><b>Hướng dẫn tải bằng văn bản</b></p>
             <ul>
-                <li>Chuyển vùng App Store từ Việt Nam qua Singapore trong cài đặt tài khoản Apple</li>
-                <li>Tải <a href="https://apps.apple.com/us/app/blue-archive/id1571873795"><b>Blue Archive</b></a> (không
-                    vào game)</li>
-                <li>Tải <a href="https://apps.apple.com/us/app/turbo-vpn-private-browser/id1365309175"><b>Turbo
-                            VPN</b></a> hoặc bất kì phần mềm VPN nào khác</li>
+                <li>Tải <a href="https://www.bluestacks.com/download.html"><b>BlueStacks</b></a>, setup và mở sau đó
+                    làm những bước tiếp theo trên BlueStacks</li>
+                <li>Tải <a href="https://www.taptap.io/mobile"><b>TapTap</b></a></li>
+                <li>Tải <a href="https://www.taptap.io/app/222442"><b>Blue Archive</b></a> (bằng TapTap), không
+                    vào game</li>
+                <li>Tải <a href="https://play.google.com/store/apps/details?id=com.urbanvpn.android"><b>Urban
+                        VPN</b></a></li>
+                <li>Bật Safe browsing để được sử dụng không giới hạn
                 <li>Kích hoạt VPN và vào game tải 400MB file đầu game</li>
-                <li>Nếu game hiện Service is not supported in this region mà không có icon X thì nhấn vào khoảng không
-                    góc trên bên phải màn hình</li>
+                <li>Nếu game hiện Service is not supported in this region mà không có icon X thì nhấn vào khoảng
+                    không góc trên bên phải màn hình</li>
                 <li>Đăng nhập, sau khi đã đăng nhập xong tắt VPN</li>
                 <li>Tải tiếp 10GB file game và vào chơi</li>
             </ul>
