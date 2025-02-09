@@ -8,11 +8,11 @@
     <title>Hướng dẫn tải Blue Archive trên Windows - Simp Hoxilo</title>
 
     <style>
-        /* Import Be Vietnam Pro font */
+        /* Import font chữ */
         @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
-        /* Import League Spartan font */
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
+        /* CSS cho toàn trang web */
         body {
             background-image: url("https://moewalls.com/wp-content/uploads/2024/02/takanashi-hoshino-in-class-looking-at-the-sky-thumb.jpg");
             background-size: cover;
@@ -108,20 +108,12 @@
 
         /* CSS cho video responsive và bo tròn cạnh */
         .card iframe {
-            position: relative;
             width: 100%;
-            height: 0;
-            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
-            border: 0;
-            border-radius: 8px; /* Bo tròn cạnh 8px */
-        }
-
-        .card iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            object-fit: cover;
         }
     </style>
 </head>
