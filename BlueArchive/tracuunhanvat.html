@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" style="color-scheme: dark;" data-theme="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="https://i.imgur.com/Iiv0ZrK.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tra cứu nhân vật</title>
+
+    <style>
+        /* Import font chữ */
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+        /* CSS cho toàn trang web */
+        body {
+            background-image: url("https://cdn.discordapp.com/attachments/1107991618239340624/1338117685409615903/wallpaperflare.com_wallpaper.jpg?ex=67a9eab5&is=67a89935&hm=cd42dcf8d293d13ae90b2f0194e5bfa6c648e8bb668d36596e882b879a7fae2b&");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            color: white;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(34, 34, 34, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(17, 17, 17, 0.8);
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            font-family: 'League Spartan', sans-serif;
+        }
+
+        nav .logo:hover {
+            text-decoration: none;
+        }
+
+        /* CSS cho form tìm kiếm và kết quả */
+        #searchContainer {
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            width: 100%; /* Chiều rộng full */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            box-sizing: border-box; /* Để padding không làm tăng chiều rộng */
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        #result .character { /* CSS cho từng kết quả */
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.7); /* Nền tối hơn cho kết quả */
+        }
+
+        #result img {
+            max-width: 100px;
+            height: auto;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="https://hoyuuna.github.io/" class="logo">Hoyuuna</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Tra cứu nhân vật</h1>
+
+        <div class="card" id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Nhập tên nhân vật">
+        </div>
+
+        <div class="card" id="result"></div>
+    </div>
+
+    <script src="characterSearch.js"></script> </body>
+
+</html>
