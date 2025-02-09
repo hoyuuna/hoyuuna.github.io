@@ -1,6 +1,6 @@
 [
     {
-      "name": "Ako (Thường)",
+      "name": "Ako",
       "image": "images/ako_thuong.png",
       "rarity": "Thường",
       "role": "Hỗ trợ",
@@ -8,11 +8,11 @@
       "info": "Ako là một Supporter mạnh mẽ, phù hợp với hầu hết các đội hình và nội dung khó. Khả năng buff của cô ấy cực kỳ hữu ích."
     },
     {
-      "name": "Ako (Lễ hội)",
+      "name": "Ako (Dress)",
       "image": "images/ako_le_hoi.png",
       "rarity": "Giới hạn",
       "role": "Hỗ trợ",
-      "roll_advice": "Bắt buộc phải quay/Bắt buộc phải quay/Nhận 100 vé miễn phí. Hỗ trợ cho mọi raid không có giáp phản đòn.",
+      "roll_advice": "Bắt buộc phải quay/Nhận 100 vé miễn phí. Hỗ trợ cho mọi raid không có giáp phản đòn.",
       "info": "Ako (Lễ hội) là phiên bản giới hạn của Ako, chuyên dụng cho các Raid không có giáp phản đòn. Cô ấy cung cấp khả năng hỗ trợ tuyệt vời."
     },
     {
@@ -843,8 +843,29 @@
       "name": "Yukari",
       "rarity": "Thường",
       "role": "Tấn công",
-      "roll_advice": "Bỏ qua. DPS cho Kurokage",
+      "roll_advice": "Bỏ qua. DPS cho Kurokage.",
       "info": "Yukari là DPS cho Raid Kurokage, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Saori (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí.",
+      "info": "DPS + Utility chính của Blue Chokmah."
+    },
+        {
+      "name": "Hiyori (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí.",
+      "info": "Mạnh ở ngoài trời, còn lại Mika mạnh hơn XD"
+    },
+        {
+      "name": "Hina",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Có thể farm được.",
+      "info": "Đạn đỏ, có thể dùng với Ui cũng khá ngon. Cực ngon nếu thiếu thốn nhân vật đầu game."
     },
     {
       "name": "Hifumi (Swimsuit)",
