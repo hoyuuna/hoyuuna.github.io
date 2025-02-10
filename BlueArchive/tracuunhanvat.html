@@ -55,6 +55,22 @@
             margin: 0;
         }
 
+        .transparent-warning-card {
+            background-color: transparent; /* Nền trong suốt */
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid white; /* Viền trắng */
+        }
+
+        .transparent-warning-card p {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
         h1 {
             text-align: center;
             margin-bottom: 20px;
@@ -161,29 +177,23 @@
     <div class="container">
         <h1>Tra cứu banner học sinh</h1>
         
+        <div class="card transparent-warning-card">
+            <p>Dữ liệu được đóng góp bởi cộng đồng. Bạn cũng có thể đóng góp tại <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4WETsQufAosVL2GheesrrAsIve31xWidRW5zldLSVRsm9ug/viewform"><b>đây</b></a></p>
+        </div>
+
         <div class="card warning-card">
-        <p><b>Thông tin được cung cấp chỉ mang tính chất tham khảo, quyết định cuối cùng thuộc về bạn. Chúng tôi không chịu trách nhiệm đối với bất kỳ hậu quả nào phát sinh từ việc sử dụng thông tin này.</b></p>
+            <p><b>Thông tin được cung cấp chỉ mang tính chất tham khảo, quyết định cuối cùng thuộc về bạn. Chúng tôi không chịu trách nhiệm đối với bất kỳ hậu quả nào phát sinh từ việc sử dụng thông tin này.</b></p>
         </div>
 
         <div class="card" id="searchContainer">
             <input type="text" id="searchInput" placeholder="Nhập tên học sinh...">
         </div>
-        
+
         <div class="card" id="result"></div>
     </div>
 
     <script src="characterSearch.js"></script>
     <script>
         // Lắng nghe sự kiện khi kết quả tìm kiếm được hiển thị
-        document.getElementById('result').addEventListener('DOMNodeInserted', function(event) {
-            const character = event.target; // Phần tử đại diện cho nhân vật
-            const rarity = character.querySelector('p:nth-child(2)'); // Phần tử chứa độ hiếm
-
-            if (rarity && rarity.textContent.includes('FES')) {
-                character.classList.add('fes-glow'); // Thêm class fes-glow
-            }
-        });
-    </script>
-</body>
-
-</html>
+        document.getElementById('result').addEventListener('DOMNodeInserted', function (event) {
+            const character = event.target; //
