@@ -853,26 +853,40 @@
       "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí. DPS + Utility chính của Blue Chokmah.",
       "info": "Có khả năng gây sát thương diện rộng kèm hiệu ứng Chill, giúp làm chậm kẻ địch.DPS Mystic hệ Heavy."
     },
-        {
+    {
       "name": "Hiyori (Swimsuit)",
       "rarity": "Giới hạn",
       "role": "Tấn công",
       "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí. DPS đạn vàng (gần giống Mika nhưng yếu hơn).",
       "info": "Có khả năng gây sát thương lớn lên một mục tiêu duy nhất và có thể liên tục sử dụng EX skill nếu có đủ EX Charge."
     },
-        {
+    {
       "name": "Hina",
       "rarity": "Giới hạn",
       "role": "Tấn công",
       "roll_advice": "Có thể farm được.",
       "info": "Hinature là một DPS mạnh mẽ với khả năng gây sát thương nổ diện rộng, rất hiệu quả với kẻ địch giáp nặng."
     },
-        {
+    {
       "name": "Miku (Collab)",
       "rarity": "Không bao giờ re-roll",
       "role": "Chưa biết",
       "roll_advice": "Không còn cơ hội... thật đấy :)",
       "info": "Mi mi mi mi mi miku."
+    },
+    {
+      "name": "Seia",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Nên quay. Giảm cost và tăng tốc hồi cost.",
+      "info": "Có khả năng giảm cost EX Skill. Ngoài ra, tăng tốc độ hồi cost (đơn giản là Ui nhưng tuyệt hơn)."
+    },
+    {
+      "name": "Rio",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Nên quay.",
+      "info": "Có khả năng tăng ATK cho đồng đội và sao chép EX Skill, giúp tăng cường đáng kể khả năng tấn công của đội hình."
     },
     {
       "name": "Hifumi (Swimsuit)",
