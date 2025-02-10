@@ -867,6 +867,13 @@
       "roll_advice": "Có thể farm được.",
       "info": "Đạn đỏ, có thể dùng với Ui cũng khá ngon. Cực ngon nếu thiếu thốn nhân vật đầu game."
     },
+        {
+      "name": "Miku (Collab)",
+      "rarity": "Không bao giờ re-roll",
+      "role": "Chưa biết",
+      "roll_advice": "Không còn cơ hội... thật đấy :)",
+      "info": "Mi mi mi mi mi miku."
+    },
     {
       "name": "Hifumi (Swimsuit)",
       "image": "images/hifumi_swimsuit.png",
