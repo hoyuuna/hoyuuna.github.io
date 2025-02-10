@@ -138,6 +138,16 @@
             float: left;
             margin-right: 10px;
         }
+
+        /* CSS cho hiệu ứng glow màu tím hồng */
+        .fes-glow {
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.3); /* Màu tím hồng, độ mờ 0.3 */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .fes-glow:hover {
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Hiệu ứng glow đậm hơn khi hover */
+        }
     </style>
 </head>
 
@@ -163,6 +173,17 @@
     </div>
 
     <script src="characterSearch.js"></script>
+    <script>
+        // Lắng nghe sự kiện khi kết quả tìm kiếm được hiển thị
+        document.getElementById('result').addEventListener('DOMNodeInserted', function(event) {
+            const character = event.target; // Phần tử đại diện cho nhân vật
+            const rarity = character.querySelector('p:nth-child(2)'); // Phần tử chứa độ hiếm
+
+            if (rarity && rarity.textContent.includes('FES')) {
+                character.classList.add('fes-glow'); // Thêm class fes-glow
+            }
+        });
+    </script>
 </body>
 
 </html>
