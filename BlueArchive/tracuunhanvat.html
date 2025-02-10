@@ -30,15 +30,16 @@
             padding: 20px;
         }
 
+        /* CSS cho card "tàng hình" */
         .card {
-            background-color: rgba(34, 34, 34, 0.8);
+            background-color: transparent; /* Làm cho nền trong suốt */
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
             backdrop-filter: blur(5px);
         }
 
-        .warning-card { /* Style cho bảng cảnh báo */
+        .warning-card {
             background-color: rgba(255, 0, 0, 0.5);
             border-radius: 8px;
             padding: 20px;
@@ -53,7 +54,6 @@
             color: white;
             margin: 0;
         }
-
 
         h1 {
             text-align: center;
@@ -100,11 +100,18 @@
         #searchInput {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 5px;
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Glow màu trắng */
+            outline: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        #searchInput:focus {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow đậm hơn khi focus */
         }
 
         #result {
@@ -114,9 +121,15 @@
         #result .character {
             margin-bottom: 10px;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 5px;
             background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); /* Glow màu trắng */
+            transition: box-shadow 0.3s ease;
+        }
+
+        #result .character:hover {
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.4); /* Glow đậm hơn khi hover */
         }
 
         #result img {
@@ -142,7 +155,8 @@
             <input type="text" id="searchInput" placeholder="Nhập tên nhân vật">
         </div>
 
-        <div class="card warning-card">  <p><b>Thông tin được cung cấp chỉ mang tính chất tham khảo, quyết định cuối cùng thuộc về bạn. Chúng tôi không chịu trách nhiệm đối với bất kỳ hậu quả nào phát sinh từ việc sử dụng thông tin này.</b></p>
+        <div class="card warning-card">
+            <p><b>Thông tin được cung cấp chỉ mang tính chất tham khảo, quyết định cuối cùng thuộc về bạn. Chúng tôi không chịu trách nhiệm đối với bất kỳ hậu quả nào phát sinh từ việc sử dụng thông tin này.</b></p>
         </div>
 
         <div class="card" id="result"></div>
