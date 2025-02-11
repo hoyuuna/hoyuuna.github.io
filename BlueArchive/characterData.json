@@ -528,9 +528,9 @@
       "info": "Minori là DPS chính cho Raid Gregorius."
     },
     {
-      "name": "Misaka Mikoto (Collab)",
+      "name": "Misaka Mikoto",
       "image": "images/misaka_mikoto.png",
-      "rarity": "Giới hạn (Collab)",
+      "rarity": "Giới hạn",
       "role": "Tấn công",
       "roll_advice": "Cân nhắc. DPS cho Chesed.",
       "info": "Misaka Mikoto là DPS cho Raid Chesed, nhưng là nhân vật Collab nên có thể không còn xuất hiện lại."
@@ -735,8 +735,8 @@
       "info": "Shiroko (Terror) là một DPS mạnh mẽ cho tất cả các Raid hệ Explosive."
     },
     {
-      "name": "Shokuhou Misaki (Collab)",
-      "rarity": "Giới hạn (Collab)",
+      "name": "Shokuhou Misaki",
+      "rarity": "Giới hạn",
       "role": "Hỗ trợ",
       "roll_advice": "Cân nhắc. Hỗ trợ cho HOD và Wakamo Hovercraft.",
       "info": "Shokuhou Misaki là một Supporter cho HOD và Wakamo Hovercraft, nhưng là nhân vật Collab nên có thể không còn xuất hiện lại."
@@ -868,7 +868,7 @@
       "info": "Hinature là một DPS mạnh mẽ với khả năng gây sát thương nổ diện rộng, rất hiệu quả với kẻ địch giáp nặng."
     },
     {
-      "name": "Miku (Collab)",
+      "name": "Miku",
       "rarity": "Không bao giờ re-roll",
       "role": "Chưa biết",
       "roll_advice": "Không còn cơ hội... thật đấy :)",
