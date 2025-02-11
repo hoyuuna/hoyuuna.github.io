@@ -23,20 +23,32 @@ fetch('characterData.json')
             const characterDiv = document.createElement('div');
             characterDiv.classList.add('character');
 
-            // Lấy chữ đầu tiên của tên
             const firstName = character.name.split(' ')[0];
-
-            // Tạo URL ảnh
             const imageUrl = `https://blue-utils.me/img/common/profile/Skill_Portrait_${firstName}.png`;
 
-            characterDiv.innerHTML = `
-              <img src="${imageUrl}" alt="${character.name}" onerror="this.src='placeholder.png'">
+            // Tạo một div chứa thông tin bên trái
+            const infoDiv = document.createElement('div');
+            infoDiv.classList.add('info'); // Thêm class để CSS dễ dàng hơn
+            infoDiv.innerHTML = `
               <h2>${character.name}</h2>
               <p>Độ hiếm: ${character.rarity}</p>
               <p>Vai trò: ${character.role}</p>
               <p>Gợi ý: ${character.roll_advice}</p>
               <p>Thông tin: ${character.info}</p>
             `;
+
+            // Tạo một div chứa ảnh bên phải
+            const imageDiv = document.createElement('div');
+            imageDiv.classList.add('image'); // Thêm class để CSS dễ dàng hơn
+            imageDiv.innerHTML = `
+              <img src="${imageUrl}" alt="${character.name}" onerror="this.src='placeholder.png'">
+            `;
+
+            // Thêm infoDiv và imageDiv vào characterDiv
+            characterDiv.appendChild(infoDiv);
+            characterDiv.appendChild(imageDiv);
+
+
             resultDiv.appendChild(characterDiv);
           });
         } else {
