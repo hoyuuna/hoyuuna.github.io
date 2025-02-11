@@ -14,7 +14,6 @@ fetch('characterData.json')
           return characterName.includes(searchTerm) || searchTerm.split(" ").every(word => characterName.includes(word));
         });
 
-        // Sắp xếp kết quả theo bảng chữ cái, ví dụ "hina" trước "hinata" và "chinat" trước "hina"
         filteredCharacters.sort((a, b) => {
           return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), undefined, { sensitivity: 'base' });
         });
@@ -23,7 +22,15 @@ fetch('characterData.json')
           filteredCharacters.forEach(character => {
             const characterDiv = document.createElement('div');
             characterDiv.classList.add('character');
+
+            // Lấy chữ đầu tiên của tên
+            const firstName = character.name.split(' ')[0];
+
+            // Tạo URL ảnh
+            const imageUrl = `https://blue-utils.me/img/common/profile/Skill_Portrait_${firstName}.png`;
+
             characterDiv.innerHTML = `
+              <img src="${imageUrl}" alt="${character.name}" onerror="this.src='placeholder.png'">
               <h2>${character.name}</h2>
               <p>Độ hiếm: ${character.rarity}</p>
               <p>Vai trò: ${character.role}</p>
