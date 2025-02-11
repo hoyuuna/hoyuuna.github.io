@@ -23,15 +23,52 @@ fetch('characterData.json')
                         const characterDiv = document.createElement('div');
                         characterDiv.classList.add('character');
 
-                        // Chuyển đổi tên nhân vật thành dạng snake_case, xử lý "Hot spring"
                         let characterNameForImage = character.name.toLowerCase();
                         if (characterNameForImage.includes("hot spring")) {
                             characterNameForImage = characterNameForImage.replace("hot spring", "onsen");
                         }
                         characterNameForImage = characterNameForImage.replace(/ \(/g, "_").replace(/\)/g, "");
 
+                        const remoteImageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
+                        const localImageUrl = `images/${characterNameForImage}.png`;
 
-                        const imageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
+                        const imgElement = document.createElement('img');
+                        imgElement.alt = character.name;
+
+                        const setImage = (url) => {
+                            imgElement.src = url;
+                        };
+
+                        // Ưu tiên link, kiểm tra lỗi trước
+                        fetch(remoteImageUrl)
+                            .then(response => {
+                                if (response.ok) {
+                                    setImage(remoteImageUrl);
+                                } else {
+                                    // Link lỗi, thử ảnh cục bộ
+                                    fetch(localImageUrl)
+                                        .then(localResponse => {
+                                            if (localResponse.ok) {
+                                                setImage(localImageUrl);
+                                            } else {
+                                                setImage('placeholder.png');
+                                            }
+                                        })
+                                        .catch(() => setImage('placeholder.png'));
+                                }
+                            })
+                            .catch(() => {
+                                // Lỗi khi fetch link, thử ảnh cục bộ
+                                fetch(localImageUrl)
+                                    .then(localResponse => {
+                                        if (localResponse.ok) {
+                                            setImage(localImageUrl);
+                                        } else {
+                                            setImage('placeholder.png');
+                                        }
+                                    })
+                                    .catch(() => setImage('placeholder.png'));
+                            });
 
                         characterDiv.innerHTML = `
                             <div class="info">
@@ -42,10 +79,10 @@ fetch('characterData.json')
                                 <p>Thông tin: ${character.info}</p>
                             </div>
                             <div class="image">
-                                <img src="${imageUrl}" alt="${character.name}" onerror="this.src='placeholder.png'">
+                                
                             </div>
                         `;
-
+                        characterDiv.querySelector('.image').appendChild(imgElement);
                         resultDiv.appendChild(characterDiv);
                     });
                 } else {
