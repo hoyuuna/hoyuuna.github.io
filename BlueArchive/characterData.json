@@ -152,12 +152,12 @@
       "info": "Fuuka (New Year) là một Supporter đa năng, có thể sử dụng trong nhiều tình huống khác nhau."
     },
     {
-      "name": "Hanako (Swimsuit) (FES)",
+      "name": "Hanako (Swimsuit)",
       "image": "images/hanako_swimsuit.png",
       "rarity": "FES",
       "role": "Tấn công",
       "roll_advice": "Bắt buộc phải quay. DPS cho Kurokage, Perorodzilla.",
-      "info": "Hanako (Swimsuit) (FES) là một DPS mạnh mẽ, đặc biệt hiệu quả trong Kurokage và Perorodzilla."
+      "info": "Hanako (Swimsuit) là một DPS mạnh mẽ, đặc biệt hiệu quả trong Kurokage và Perorodzilla."
     },
     {
       "name": "Hare (Camp)",
@@ -216,12 +216,12 @@
       "info": "Hinata là DPS cho Perorodzilla và Goz, nhưng có nhiều lựa chọn tốt hơn."
     },
     {
-      "name": "Hinata (Swimsuit) (FES)",
+      "name": "Hinata (Swimsuit)",
       "image": "images/hinata_swimsuit.png",
       "rarity": "FES",
       "role": "Tấn công",
       "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí. DPS cho Kaiten/Gregorius.",
-      "info": "Hinata (Swimsuit) (FES) là DPS cho Kaiten/Gregorius."
+      "info": "Hinata (Swimsuit) là DPS cho Kaiten/Gregorius."
     },
     {
       "name": "Hiyori",
@@ -248,12 +248,12 @@
       "info": "Hoshino (Swimsuit) là một Supporter mạnh mẽ cho Explosive Raids và các nội dung không có giáp phản đòn."
     },
     {
-      "name": "Hoshino (Battle) (FES)",
+      "name": "Hoshino (Battle)",
       "image": "images/hoshino_battle.png",
       "rarity": "FES",
       "role": "Tấn công/Tank",
       "roll_advice": "Bắt buộc phải quay. DPS và tank tất cả trong một.",
-      "info": "Hoshino (Battle) (FES) là một nhân vật đa năng, vừa có thể gây sát thương, vừa có thể tank."
+      "info": "Hoshino (Battle) là một nhân vật đa năng, vừa có thể gây sát thương, vừa có thể tank."
     },
     {
       "name": "Ichika",
@@ -488,12 +488,12 @@
       "info": "Midori (Maid) là DPS cho các nội dung Single Target Elastic."
     },
     {
-      "name": "Mika (FES)",
+      "name": "Mika",
       "image": "images/mika_fes.png",
       "rarity": "FES",
       "role": "Tấn công",
       "roll_advice": "BẮT BUỘC PHẢI QUAY. DPS cho tất cả các Yellow Raids.",
-      "info": "Mika (FES) là một DPS cực kỳ mạnh mẽ, bắt buộc phải có cho các Raid hệ Yellow."
+      "info": "Mika là một DPS cực kỳ mạnh mẽ, bắt buộc phải có cho các Raid hệ Yellow."
     },
     {
       "name": "Mimori",
@@ -897,4 +897,3 @@
       "info": "Hifumi (Swimsuit) là một Supporter cho Raid Chesed, và có thể farm được."
     }
   ]
-  
