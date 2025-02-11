@@ -23,8 +23,13 @@ fetch('characterData.json')
                         const characterDiv = document.createElement('div');
                         characterDiv.classList.add('character');
 
-                        // Chuyển đổi tên nhân vật thành dạng snake_case
-                        let characterNameForImage = character.name.toLowerCase().replace(/ \(/g, "_").replace(/\)/g, "");
+                        // Chuyển đổi tên nhân vật thành dạng snake_case, xử lý "Hot spring"
+                        let characterNameForImage = character.name.toLowerCase();
+                        if (characterNameForImage.includes("hot spring")) {
+                            characterNameForImage = characterNameForImage.replace("hot spring", "onsen");
+                        }
+                        characterNameForImage = characterNameForImage.replace(/ \(/g, "_").replace(/\)/g, "");
+
 
                         const imageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
 
