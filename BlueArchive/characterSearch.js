@@ -23,8 +23,10 @@ fetch('characterData.json')
                         const characterDiv = document.createElement('div');
                         characterDiv.classList.add('character');
 
-                        const firstName = character.name.split(' ')[0];
-                        const imageUrl = `https://blue-utils.me/img/common/profile/Skill_Portrait_${firstName}.png`;
+                        // Chuyển đổi tên nhân vật thành dạng snake_case
+                        let characterNameForImage = character.name.toLowerCase().replace(/ \(/g, "_").replace(/\)/g, "");
+
+                        const imageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
 
                         characterDiv.innerHTML = `
                             <div class="info">
