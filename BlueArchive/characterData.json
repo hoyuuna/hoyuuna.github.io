@@ -24,20 +24,20 @@
       "info": "Akane (Bunny) là một DPS cho Mystic Raids. Tuy nhiên, có nhiều lựa chọn DPS khác tốt hơn."
     },
     {
-      "name": "Akari (New Year)",
+      "name": "Akari (NewYear)",
       "image": "images/akari_new_year.png",
       "rarity": "Thường",
       "role": "Hỗ trợ",
       "roll_advice": "Bắt buộc phải quay. Hỗ trợ T.S. cho đội hình Multi-DPS và Fury of Set.",
-      "info": "Akari (New Year) là một Supporter mạnh mẽ, đặc biệt hữu dụng cho các đội hình Multi-DPS và Fury of Set."
+      "info": "Akari (NewYear) là một Supporter mạnh mẽ, đặc biệt hữu dụng cho các đội hình Multi-DPS và Fury of Set."
     },
     {
-      "name": "Aru (New Year)",
+      "name": "Aru (NewYear)",
       "image": "images/aru_new_year.png",
       "rarity": "Giới hạn",
       "role": "Tấn công",
       "roll_advice": "Bỏ qua. DPS cho Chesed.",
-      "info": "Aru (New Year) là DPS cho Raid Chesed. Tuy nhiên, có nhiều lựa chọn tốt hơn."
+      "info": "Aru (NewYear) là DPS cho Raid Chesed. Tuy nhiên, có nhiều lựa chọn tốt hơn."
     },
     {
       "name": "Aru (Dress)",
@@ -144,12 +144,12 @@
       "info": "Fubuki (Swimsuit) là một DPS tiềm năng cho Gregorius, nhưng cần thêm thông tin để đánh giá."
     },
     {
-      "name": "Fuuka (New Year)",
+      "name": "Fuuka (NewYear)",
       "image": "images/fuuka_new_year.png",
       "rarity": "Giới hạn",
       "role": "Hỗ trợ",
       "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho hầu hết các raid và nội dung.",
-      "info": "Fuuka (New Year) là một Supporter đa năng, có thể sử dụng trong nhiều tình huống khác nhau."
+      "info": "Fuuka (NewYear) là một Supporter đa năng, có thể sử dụng trong nhiều tình huống khác nhau."
     },
     {
       "name": "Hanako (Swimsuit)",
@@ -176,20 +176,20 @@
       "info": "Haruna (Track) cung cấp khả năng hồi máu, hữu ích cho các đội hình thường xuyên di chuyển vị trí."
     },
     {
-      "name": "Haruna (New Year)",
+      "name": "Haruna (NewYear)",
       "image": "images/haruna_new_year.png",
       "rarity": "Giới hạn",
       "role": "Tấn công",
       "roll_advice": "Bỏ qua. DPS cho Kaiten và Explosive AoE.",
-      "info": "Haruna (New Year) là DPS cho Kaiten và các nội dung Explosive AoE."
+      "info": "Haruna (NewYear) là DPS cho Kaiten và các nội dung Explosive AoE."
     },
     {
-      "name": "Haruka (New Year)",
+      "name": "Haruka (NewYear)",
       "image": "images/haruka_new_year.png",
       "rarity": "Thường",
       "role": "Hỗ trợ",
       "roll_advice": "Bỏ qua / Cân nhắc giảm Crit RES. Hỗ trợ cho Raids có Crit RES cao.",
-      "info": "Haruka (New Year) có thể giảm Crit RES của đối phương, hữu ích cho các Raid có Crit RES cao."
+      "info": "Haruka (NewYear) có thể giảm Crit RES của đối phương, hữu ích cho các Raid có Crit RES cao."
     },
     {
       "name": "Hina (Swimsuit)",
@@ -352,12 +352,12 @@
       "info": "Kasumi là DPS cho Kurokage TMT, hãy cân nhắc nếu bạn cần DPS cho loại Raid này."
     },
     {
-      "name": "Kayoko (New Year)",
+      "name": "Kayoko (NewYear)",
       "image": "images/kayoko_new_year.png",
       "rarity": "Thường",
       "role": "Hỗ trợ",
       "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho Blue Raids.",
-      "info": "Kayoko (New Year) là một Supporter mạnh mẽ cho các Raid hệ Blue."
+      "info": "Kayoko (NewYear) là một Supporter mạnh mẽ cho các Raid hệ Blue."
     },
     {
       "name": "Kayoko (Dress)",
@@ -581,11 +581,11 @@
       "info": "Momoi (Maid) là DPS cho các nội dung Single Target Elastic."
     },
     {
-      "name": "Mutsuki (New Year)",
+      "name": "Mutsuki (NewYear)",
       "rarity": "Giới hạn",
       "role": "Tấn công",
       "roll_advice": "Bắt buộc phải quay. DPS cho Goz và Perorodzilla.",
-      "info": "Mutsuki (New Year) là một DPS mạnh mẽ cho Raid Goz và Perorodzilla."
+      "info": "Mutsuki (NewYear) là một DPS mạnh mẽ cho Raid Goz và Perorodzilla."
     },
     {
       "name": "Nagisa",
@@ -679,11 +679,11 @@
       "info": "Sakurako là DPS cho Raid GOZ, hãy cân nhắc nếu bạn cần DPS cho loại Raid này."
     },
     {
-      "name": "Serika (New Year)",
+      "name": "Serika (NewYear)",
       "rarity": "Thường",
       "role": "Hỗ trợ",
       "roll_advice": "Bỏ qua. Hỗ trợ cho Chesed.",
-      "info": "Serika (New Year) là một Supporter cho Raid Chesed."
+      "info": "Serika (NewYear) là một Supporter cho Raid Chesed."
     },
     {
       "name": "Serika (Swimsuit)",
@@ -729,7 +729,7 @@
     },
     {
       "name": "Shiroko (Terror)",
-      "rarity": "Giới hạn",
+      "rarity": "FES",
       "role": "Tấn công",
       "roll_advice": "Bắt buộc phải quay. DPS cho All Explosive Raids",
       "info": "Shiroko (Terror) là một DPS mạnh mẽ cho tất cả các Raid hệ Explosive."
