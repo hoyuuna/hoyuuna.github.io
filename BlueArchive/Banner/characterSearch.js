@@ -5,7 +5,7 @@ fetch('characterData.json')
         const resultDiv = document.getElementById('result');
 
         function displayAllCharacters() {
-            resultDiv.innerHTML = ''; // Clear previous results
+            resultDiv.innerHTML = ''; 
             characterData.sort((a, b) => {
                 return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), undefined, { sensitivity: 'base' });
             });
@@ -40,7 +40,7 @@ fetch('characterData.json')
 
         searchInput.addEventListener('input', function () {
             const searchTerm = searchInput.value.toLowerCase();
-            resultDiv.innerHTML = ''; // Clear previous results
+            resultDiv.innerHTML = ''; 
 
             if (searchTerm.length > 0) {
                 const filteredCharacters = characterData.filter(character => {
@@ -84,10 +84,10 @@ fetch('characterData.json')
                     resultDiv.innerHTML = "<p>Không tìm thấy học sinh này ≧ ﹏ ≦</p>";
                 }
             } else {
-                displayAllCharacters(); // Display all characters when search input is empty
+                displayAllCharacters(); 
             }
         });
 
-        // Initial display of all characters when the page loads
+
         displayAllCharacters();
     });
