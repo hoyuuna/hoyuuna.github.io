@@ -139,10 +139,10 @@ nav .logo:hover {
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     transition: box-shadow 0.3s ease;
-    display: grid; /* Sử dụng grid layout */
-    grid-template-columns: 1fr 100px; /* Chia thành 2 cột: 1fr (flexible) và 100px (cố định) */
-    gap: 10px; /* Khoảng cách giữa các cột */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    display: grid; 
+    grid-template-columns: 1fr 100px; 
+    gap: 10px; 
+    align-items: center; 
 }
 
 #result .character:hover {
@@ -150,16 +150,16 @@ nav .logo:hover {
 }
 
 #result .character .info {
-    /* ... (giữ nguyên các style hiện có) ... */
+
 }
 
 #result .character .image {
-    /* ... (giữ nguyên các style hiện có) ... */
-    grid-column: 2; /* Đặt hình ảnh vào cột thứ 2 */
+
+    grid-column: 2; 
 }
 
 #result .character img {
-    /* ... (giữ nguyên các style hiện có) ... */
+
     max-width: 100%;
     height: auto;
 }
@@ -202,6 +202,6 @@ nav .logo:hover {
 
     <script src="characterSearch.js"></script>
     <script>
-        // Lắng nghe sự kiện khi kết quả tìm kiếm được hiển thị
+
         document.getElementById('result').addEventListener('DOMNodeInserted', function (event) {
             const character = event.target; //
