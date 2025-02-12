@@ -1,0 +1,13 @@
+body {
+  background-color: #e0f2f7; 
+  overflow: hidden; 
+}
+
+#character {
+  position: absolute; 
+}
+
+#character img {
+  width: 100px; 
+  height: 100px;
+}
