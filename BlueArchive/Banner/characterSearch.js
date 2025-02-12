@@ -108,7 +108,7 @@ fetch('characterData.json')
                         resultDiv.appendChild(characterDiv);
                     });
                 } else {
-                    resultDiv.innerHTML = "<p>Không tìm thấy học sinh này ≧ ﹏ ≦</p>";
+                    resultDiv.innerHTML = "<p>Không tìm thấy học sinh này ＞︿＜</p>";
                 }
             } else {
                 displayAllCharacters();
