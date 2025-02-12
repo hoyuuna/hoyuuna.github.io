@@ -4,9 +4,43 @@ fetch('characterData.json')
         const searchInput = document.getElementById('searchInput');
         const resultDiv = document.getElementById('result');
 
+        function displayAllCharacters() {
+            resultDiv.innerHTML = ''; // Clear previous results
+            characterData.sort((a, b) => {
+                return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), undefined, { sensitivity: 'base' });
+            });
+            characterData.forEach(character => {
+                const characterDiv = document.createElement('div');
+                characterDiv.classList.add('character');
+
+                let characterNameForImage = character.name.toLowerCase();
+                if (characterNameForImage.includes("hot spring")) {
+                    characterNameForImage = characterNameForImage.replace("hot spring", "onsen");
+                }
+                characterNameForImage = characterNameForImage.replace(/ \(/g, "_").replace(/\)/g, "");
+
+                const imageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
+
+                characterDiv.innerHTML = `
+                    <div class="info">
+                        <h2>${character.name}</h2>
+                        <p>Độ hiếm: ${character.rarity}</p>
+                        <p>Vai trò: ${character.role}</p>
+                        <p>Gợi ý: ${character.roll_advice}</p>
+                        <p>Thông tin: ${character.info}</p>
+                    </div>
+                    <div class="image">
+                        <img src="${imageUrl}" alt="${character.name}" onerror="this.src='placeholder.png'">
+                    </div>
+                `;
+
+                resultDiv.appendChild(characterDiv);
+            });
+        }
+
         searchInput.addEventListener('input', function () {
             const searchTerm = searchInput.value.toLowerCase();
-            resultDiv.innerHTML = '';
+            resultDiv.innerHTML = ''; // Clear previous results
 
             if (searchTerm.length > 0) {
                 const filteredCharacters = characterData.filter(character => {
@@ -23,13 +57,11 @@ fetch('characterData.json')
                         const characterDiv = document.createElement('div');
                         characterDiv.classList.add('character');
 
-                        // Chuyển đổi tên nhân vật thành dạng snake_case, xử lý "Hot spring"
                         let characterNameForImage = character.name.toLowerCase();
                         if (characterNameForImage.includes("hot spring")) {
                             characterNameForImage = characterNameForImage.replace("hot spring", "onsen");
                         }
                         characterNameForImage = characterNameForImage.replace(/ \(/g, "_").replace(/\)/g, "");
-
 
                         const imageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
 
@@ -51,6 +83,11 @@ fetch('characterData.json')
                 } else {
                     resultDiv.innerHTML = "<p>Không tìm thấy học sinh này ≧ ﹏ ≦</p>";
                 }
+            } else {
+                displayAllCharacters(); // Display all characters when search input is empty
             }
         });
+
+        // Initial display of all characters when the page loads
+        displayAllCharacters();
     });
