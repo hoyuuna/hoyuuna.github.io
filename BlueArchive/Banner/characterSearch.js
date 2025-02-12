@@ -5,7 +5,7 @@ fetch('characterData.json')
         const resultDiv = document.getElementById('result');
 
         function displayAllCharacters() {
-            resultDiv.innerHTML = ''; 
+            resultDiv.innerHTML = '';
             characterData.sort((a, b) => {
                 return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), undefined, { sensitivity: 'base' });
             });
@@ -14,9 +14,23 @@ fetch('characterData.json')
                 characterDiv.classList.add('character');
 
                 let characterNameForImage = character.name.toLowerCase();
+
+
                 if (characterNameForImage.includes("hot spring")) {
                     characterNameForImage = characterNameForImage.replace("hot spring", "onsen");
                 }
+
+
+                if (characterNameForImage.includes("track")) {
+                    characterNameForImage = characterNameForImage.replace("track", "gym");
+                }
+
+
+                if (characterNameForImage.includes("cheer squad")) {
+                    characterNameForImage = characterNameForImage.replace("cheer squad", "oendan");
+                }
+
+
                 characterNameForImage = characterNameForImage.replace(/ \(/g, "_").replace(/\)/g, "");
 
                 const imageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
@@ -40,7 +54,7 @@ fetch('characterData.json')
 
         searchInput.addEventListener('input', function () {
             const searchTerm = searchInput.value.toLowerCase();
-            resultDiv.innerHTML = ''; 
+            resultDiv.innerHTML = '';
 
             if (searchTerm.length > 0) {
                 const filteredCharacters = characterData.filter(character => {
@@ -58,9 +72,22 @@ fetch('characterData.json')
                         characterDiv.classList.add('character');
 
                         let characterNameForImage = character.name.toLowerCase();
+
+
                         if (characterNameForImage.includes("hot spring")) {
                             characterNameForImage = characterNameForImage.replace("hot spring", "onsen");
                         }
+
+
+                        if (characterNameForImage.includes("track")) {
+                            characterNameForImage = characterNameForImage.replace("track", "gym");
+                        }
+
+
+                        if (characterNameForImage.includes("cheer squad")) {
+                            characterNameForImage = characterNameForImage.replace("cheer squad", "oendan");
+                        }
+
                         characterNameForImage = characterNameForImage.replace(/ \(/g, "_").replace(/\)/g, "");
 
                         const imageUrl = `https://blue-utils.me/img/common/sd/${characterNameForImage}.png`;
@@ -84,10 +111,9 @@ fetch('characterData.json')
                     resultDiv.innerHTML = "<p>Không tìm thấy học sinh này ≧ ﹏ ≦</p>";
                 }
             } else {
-                displayAllCharacters(); 
+                displayAllCharacters();
             }
         });
-
 
         displayAllCharacters();
     });
