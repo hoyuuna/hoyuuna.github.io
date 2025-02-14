@@ -204,8 +204,12 @@ nav .logo:hover {
     </div>
 
     <script src="characterSearch.js"></script>
-        
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2849677548239253"
+        <script>
+        document.getElementById('result').addEventListener('DOMNodeInserted', function (event) {
+            const character = event.target;
+            </script>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2849677548239253"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
      style="display:block"
@@ -217,5 +221,3 @@ nav .logo:hover {
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-        document.getElementById('result').addEventListener('DOMNodeInserted', function (event) {
-            const character = event.target; //
