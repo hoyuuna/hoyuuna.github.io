@@ -5,6 +5,16 @@
     <link rel="icon" href="https://i.imgur.com/Iiv0ZrK.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Đóng góp dữ liệu banner học sinh - Hoyuuna</title>
+    <script>
+  window.onload = function() {
+    if (navigator.userAgent.match(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i)) {
+      var confirmed = confirm("Có vẻ như bạn đang sử dụng trình duyệt trên thiết bị di động. Nhấn OK để di chuyển sang trang dễ nhìn hơn hoặc Hủy để tiếp tục.");
+      if (confirmed) {
+        window.location.href = "https://forms.gle/Lv63He9gLPHUG5BX7";
+      }
+    }
+  };
+</script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=League+Spartan:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:wght@400;700&display=swap');
