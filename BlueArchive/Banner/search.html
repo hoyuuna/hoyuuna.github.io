@@ -23,7 +23,6 @@
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:wght@400;700&display=swap');
 
 body {
-    background-image: url("https://i.imgur.com/7iy78Oh.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -186,6 +185,20 @@ nav .logo:hover {
 </head>
 
 <body>
+    <script>
+const images = [
+    "https://i.imgur.com/7iy78Oh.jpeg",
+    "https://i.imgur.com/u21f1Tm.jpeg",
+    "https://i.imgur.com/drNXvAJ.jpeg",
+    "https://i.imgur.com/S8JiX4v.jpeg",
+    "https://i.imgur.com/GYug1oH.jpeg",
+];
+
+const randomIndex = Math.floor(Math.random() * images.length);
+const randomImage = images[randomIndex];
+
+document.body.style.backgroundImage = `url("${randomImage}")`;
+</script>
     <nav>
         <div class="container">
             <a href="https://hoyuuna.github.io/" class="logo">Hoyuuna</a>
