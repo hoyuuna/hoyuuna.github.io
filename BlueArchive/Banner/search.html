@@ -137,8 +137,8 @@ h1 {
     color: white;
     text-align: center;
     margin-top: 20px;
-    opacity: 0; /* Ẩn logo khi sidebar thu gọn */
-    transition: opacity 0.3s ease; /* Hiệu ứng mờ dần */
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
 
 nav#sidebar {
@@ -163,7 +163,7 @@ nav#sidebar:hover {
     width: 250px;
 }
 
-nav#sidebar:hover .sidebar-logo { /* Hiển thị logo khi sidebar mở rộng */
+nav#sidebar:hover .sidebar-logo { 
     opacity: 1;
 }
 
@@ -178,21 +178,21 @@ nav#sidebar a {
 nav#sidebar a span {
     margin-right: 5px;
     vertical-align: middle;
-    display: inline-flex; /* Sử dụng inline-flex để xếp emoji và chữ trên cùng dòng */
-    align-items: center; /* Canh giữa emoji và chữ theo chiều dọc */
+    display: inline-flex;
+    align-items: center; 
 }
 
 nav#sidebar a span + span {
-    margin-left: 5px; /* Thêm khoảng cách giữa emoji và chữ */
-    transition: opacity 0.3s ease; /* Hiệu ứng mờ dần */
+    margin-left: 5px; 
+    transition: opacity 0.3s ease; 
 }
 
-/* Ẩn chữ khi sidebar thu gọn */
+
 nav#sidebar:not(:hover) a span + span {
     display: none;
 }
 
-/* Hiển thị chữ khi sidebar mở rộng */
+
 nav#sidebar:hover a span + span {
     display: inline;
     opacity: 1;
@@ -289,7 +289,7 @@ document.body.style.backgroundImage = `url("${randomImage}")`;
         <a href="http://hoyuuna.github.io/"><span>🏠</span><span>Trang chủ</span></a>
     </div>
     <div class="sidebar-card">
-        <a href="https://hoyuuna.github.io/BlueArchive/Banner/search"><span>🔍</span><span>Tra cứu banner BA</span></a>
+        <a href="https://hoyuuna.github.io/BlueArchive/Banner/search-legacy"><span>🔍</span><span>Quay lại giao diện cũ</span></a>
     </div>
     <div class="sidebar-card">
         <a href="https://simphoxilo.ct.ws/donate/"><span>🫰</span><span>Ủng hộ tôi</span></a>
