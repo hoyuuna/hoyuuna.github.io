@@ -10,7 +10,6 @@
     <title>Tra cứu banner học sinh - Hoyuuna</title>
 
     <style>
-
 @import url('https://fonts.googleapis.com/css?family=League+Spartan:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:wght@400;700&display=swap');
 
@@ -22,6 +21,7 @@ body {
     color: white;
     margin: 0;
     line-height: 1.6;
+    display: flex;
 }
 
 .container {
@@ -76,37 +76,6 @@ h1 {
     color: white;
 }
 
-nav {
-    background-color: rgba(17, 17, 17, 0.8);
-    padding: 10px 0;
-    border-bottom: 1px solid #333;
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-nav .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-
-nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    font-family: 'League Spartan', sans-serif;
-}
-
-nav .logo:hover {
-    text-decoration: none;
-}
-
 #searchContainer {
     margin-bottom: 20px;
 }
@@ -140,29 +109,127 @@ nav .logo:hover {
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     transition: box-shadow 0.3s ease;
-    display: grid; 
-    grid-template-columns: 1fr 100px; 
-    gap: 10px; 
-    align-items: center; 
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 10px;
+    align-items: center;
 }
 
 #result .character:hover {
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
 }
 
-#result .character .info {
-
-}
+#result .character .info {}
 
 #result .character .image {
-
-    grid-column: 2; 
+    grid-column: 2;
 }
 
 #result .character img {
-
     max-width: 100%;
     height: auto;
+}
+
+.sidebar-logo {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0; /* Ẩn logo khi sidebar thu gọn */
+    transition: opacity 0.3s ease; /* Hiệu ứng mờ dần */
+}
+
+nav#sidebar {
+    width: 50px;
+    background-color: rgba(17, 17, 17, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    z-index: 101;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease;
+}
+
+nav#sidebar:hover {
+    width: 250px;
+}
+
+nav#sidebar:hover .sidebar-logo { /* Hiển thị logo khi sidebar mở rộng */
+    opacity: 1;
+}
+
+nav#sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav#sidebar a span {
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-flex; /* Sử dụng inline-flex để xếp emoji và chữ trên cùng dòng */
+    align-items: center; /* Canh giữa emoji và chữ theo chiều dọc */
+}
+
+nav#sidebar a span + span {
+    margin-left: 5px; /* Thêm khoảng cách giữa emoji và chữ */
+    transition: opacity 0.3s ease; /* Hiệu ứng mờ dần */
+}
+
+/* Ẩn chữ khi sidebar thu gọn */
+nav#sidebar:not(:hover) a span + span {
+    display: none;
+}
+
+/* Hiển thị chữ khi sidebar mở rộng */
+nav#sidebar:hover a span + span {
+    display: inline;
+    opacity: 1;
+}
+
+nav#sidebar a:hover {}
+
+.sidebar-card {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.sidebar-card:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 70px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+@media (max-width: 768px) {
+    nav#sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
 }
 
 .fes-glow {
@@ -173,6 +240,29 @@ nav .logo:hover {
 .fes-glow:hover {
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
 }
+
+.sidebar-bottom-card {
+    background-color: transparent; 
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    bottom: 50px;
+    width: calc(100% - 40px);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+nav#sidebar:hover .sidebar-bottom-card {
+    opacity: 1; 
+}
+
     </style>
 </head>
 
@@ -191,11 +281,24 @@ const randomImage = images[randomIndex];
 
 document.body.style.backgroundImage = `url("${randomImage}")`;
 </script>
-    <nav>
-        <div class="container">
-            <a href="https://hoyuuna.github.io/" class="logo">Hoyuuna</a>
-        </div>
-    </nav>
+<nav id="sidebar">
+    <div class="sidebar-logo">
+        <h1>Hoyuuna</h1>
+    </div>
+    <div class="sidebar-card">
+        <a href="http://hoyuuna.github.io/"><span>🏠</span><span>Trang chủ</span></a>
+    </div>
+    <div class="sidebar-card">
+        <a href="https://hoyuuna.github.io/BlueArchive/Banner/search"><span>🔍</span><span>Tra cứu banner BA</span></a>
+    </div>
+    <div class="sidebar-card">
+        <a href="https://simphoxilo.ct.ws/donate/"><span>🫰</span><span>Ủng hộ tôi</span></a>
+    </div>
+    <a href="https://github.com/hoyuuna/hoyuuna.github.io/" class="sidebar-card sidebar-bottom-card">
+        <p>Web mã nguồn mở bởi Hoyuuna</p>
+    </a>
+</nav>
+
 
     <div class="container">
         <h1>Tra cứu banner học sinh</h1>
