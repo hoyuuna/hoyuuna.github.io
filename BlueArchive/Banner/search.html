@@ -166,7 +166,7 @@ nav#sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease-in-out; 
 }
 
 nav#sidebar:hover {
@@ -299,11 +299,11 @@ document.body.style.backgroundImage = `url("${randomImage}")`;
         <a href="http://hoyuuna.github.io/"><span>🏠</span><span>Trang chủ</span></a>
     </div>
     <div class="sidebar-card">
-        <a href="https://hoyuuna.github.io/BlueArchive/Banner/search-legacy"><span>🔍</span><span>Quay lại giao diện cũ</span></a>
-    </div>
-    <div class="sidebar-card">
         <a href="https://simphoxilo.ct.ws/donate/"><span>🫰</span><span>Ủng hộ tôi</span></a>
     </div>
+        <a href="https://hoyuuna.github.io/BlueArchive/Banner/search-legacy/" class="sidebar-card sidebar-bottom-card">
+        <p>⬅️ Giao diện cũ</p>
+    </a>
     </a>
 </nav>
 
