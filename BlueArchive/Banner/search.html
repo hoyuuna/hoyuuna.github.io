@@ -156,7 +156,7 @@ h1 {
 nav#sidebar {
     width: 50px;
     background-color: rgba(17, 17, 17, 0.8);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -168,7 +168,8 @@ nav#sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: width 0.3s ease-in-out; 
+    transition: width 0.3s ease-in-out;
+    overflow-y: auto; 
 }
 
 nav#sidebar:hover {
@@ -325,9 +326,6 @@ document.body.style.backgroundImage = `url("${randomImage}")`;
     <div class="sidebar-card">
         <a href="#" onclick="showAlert1()"><span>🎁</span><span>Nhận quà server MC</span></a>
     </div>
-        <a href="https://hoyuuna.github.io/BlueArchive/Banner/search-legacy" class="sidebar-card sidebar-bottom-card">
-        <p>⬅️ Giao diện cũ</p>
-    </a>
 </nav>
 
 
