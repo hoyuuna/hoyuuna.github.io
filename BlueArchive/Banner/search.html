@@ -240,6 +240,7 @@ nav#sidebar a:hover {}
         height: auto;
         position: relative;
         box-shadow: none;
+        overflow-y: auto;
     }
 
     .main-content {
@@ -277,6 +278,14 @@ nav#sidebar a:hover {}
 
 nav#sidebar:hover .sidebar-bottom-card {
     opacity: 1; 
+    
+        nav#sidebar::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for WebKit browsers */
+ }
+
+        nav#sidebar {
+            -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+            scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
     </style>
