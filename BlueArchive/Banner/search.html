@@ -170,6 +170,8 @@ nav#sidebar {
     align-items: center;
     transition: width 0.3s ease-in-out;
     overflow-y: auto; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 nav#sidebar:hover {
@@ -206,6 +208,7 @@ nav#sidebar a span + span {
 nav#sidebar:not(:hover) a span + span {
     display: none;
     transition: opacity 0.3s ease;
+    border-radius: 0 10px 10px 0;
 }
 
 
