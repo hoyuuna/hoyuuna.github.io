@@ -109,25 +109,36 @@
 
     <script>
         function submitForm() {
-            var form = document.getElementById("contributionForm");
-            var data = {
-                name: form.name.value,
-                discord: form.discord.value,
-                studentName: form.studentName.value,
-                rarity: form.rarity.value,
-                suggestion: form.suggestion.value,
-                info: form.info.value,
-                role: form.role.value,
-                action: form.action.value,
-            };
+      var form = document.getElementById("contributionForm");
+      var data = {
+        name: form.name.value,
+        discord: form.discord.value,
+        studentName: form.studentName.value,
+        rarity: form.rarity.value,
+        suggestion: form.suggestion.value,
+        info: form.info.value,
+        role: form.role.value,
+      };
 
-            google.script.run.withSuccessHandler(formSubmitted).processForm(data);
+      fetch(
+        "https://script.google.com/macros/s/AKfycbyZs76muMhAMMHdjed0XeOaN9Kf8wPFmmK_yTKjbSQLanEumBO1hlMLD6Mi1PDfGgGa/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         }
-
-        function formSubmitted(message) {
-            document.getElementById("formMessage").innerHTML = "Đóng góp của bạn đã được gửi thành công!";
-            document.getElementById("contributionForm").reset();
-        }
+      )
+        .then((response) => {
+          formSubmitted("Đóng góp của bạn đã được gửi thành công!");
+        })
+        .catch((error) => {
+          console.error("Lỗi:", error);
+          formSubmitted("Có lỗi xảy ra. Vui lòng thử lại sau.");
+        });
+    }
     </script>
                         </div>
                     </li>
