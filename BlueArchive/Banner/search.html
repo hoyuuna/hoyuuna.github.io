@@ -69,40 +69,40 @@
                         <div class="work">
                             <h2>Đóng góp</h2>
                             <div class="work--lockup">
-        <div class="card">
+        <div class="card" style="background-color: black; border: 1px solid white; padding: 20px;">
             <form id="contributionForm">
-                <label for="name">Tên của bạn (nickname...):</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                <label for="name" style="color: white;">Tên của bạn (nickname...):</label><br>
+                <input type="text" id="name" name="name" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;"><br><br>
 
-                <label for="discord">Tên tài khoản Discord (tên đăng nhập)/email:</label><br>
-                <input type="text" id="discord" name="discord" required><br><br>
+                <label for="discord" style="color: white;">Tên tài khoản Discord (tên đăng nhập)/email:</label><br>
+                <input type="text" id="discord" name="discord" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;"><br><br>
 
-                <label for="studentName">Tên học sinh (không có họ) + form (nếu có):</label><br>
-                <input type="text" id="studentName" name="studentName" required><br><br>
+                <label for="studentName" style="color: white;">Tên học sinh (không có họ) + form (nếu có):</label><br>
+                <input type="text" id="studentName" name="studentName" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;"><br><br>
 
-                <label for="rarity">Độ hiếm:</label><br>
-                <select id="rarity" name="rarity" required>
+                <label for="rarity" style="color: white;">Độ hiếm:</label><br>
+                <select id="rarity" name="rarity" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;">
                     <option value="">Chọn độ hiếm</option>
                     <option value="Thường">Thường</option>
                     <option value="Giới hạn (limited)">Giới hạn (limited)</option>
                     <option value="FES (limited fes)">FES (limited fes)</option>
                 </select><br><br>
 
-                <label for="suggestion">Gợi ý banner:</label><br>
-                <input type="text" id="suggestion" name="suggestion" required><br><br>
+                <label for="suggestion" style="color: white;">Gợi ý banner:</label><br>
+                <input type="text" id="suggestion" name="suggestion" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;"><br><br>
 
-                <label for="info">Thông tin:</label><br>
-                <textarea id="info" name="info" rows="4" cols="50" required></textarea><br><br>
+                <label for="info" style="color: white;">Thông tin:</label><br>
+                <textarea id="info" name="info" rows="4" cols="50" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;"></textarea><br><br>
 
-                <label for="role">Vai trò:</label><br>
-                <input type="text" id="role" name="role" required><br><br>
+                <label for="role" style="color: white;">Vai trò:</label><br>
+                <input type="text" id="role" name="role" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;"><br><br>
 
-                <label for="action">Bạn muốn làm gì?:</label><br>
-                <textarea id="action" name="action" rows="4" cols="50" required></textarea><br><br>
+                <label for="action" style="color: white;">Bạn muốn làm gì?:</label><br>
+                <textarea id="action" name="action" rows="4" cols="50" required style="background-color: #333; color: white; border: 1px solid #555; padding: 5px; width: 100%; box-sizing: border-box;"></textarea><br><br>
 
-                <button type="button" onclick="submitForm()">Gửi đóng góp</button>
+                <button type="button" onclick="submitForm()" style="background-color: #0f33ff; color: white; border: none; padding: 10px 20px; cursor: pointer; width: 100%; box-sizing: border-box;">Gửi đóng góp</button>
             </form>
-            <div id="formMessage"></div>
+            <div id="formMessage" style="color: white;"></div>
         </div>
     </div>
 
@@ -116,10 +116,6 @@
                 rarity: form.rarity.value,
                 suggestion: form.suggestion.value,
                 info: form.info.value,
-                personalInfo: form.personalInfo.checked,
-                studentInfo: form.studentInfo.checked,
-                legalInfo: form.legalInfo.checked,
-                violationInfo: form.violationInfo.checked,
                 role: form.role.value,
                 action: form.action.value,
             };
