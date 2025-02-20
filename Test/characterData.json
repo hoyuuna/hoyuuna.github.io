@@ -1,0 +1,899 @@
+[
+    {
+      "name": "Ako",
+      "image": "images/ako_thuong.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho mọi nội dung khó.",
+      "info": "Ako là một Supporter mạnh mẽ, phù hợp với hầu hết các đội hình và nội dung khó. Khả năng buff của cô ấy cực kỳ hữu ích."
+    },
+    {
+      "name": "Ako (Dress)",
+      "image": "images/ako_le_hoi.png",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay/Nhận 100 vé miễn phí. Hỗ trợ cho mọi raid không có giáp phản đòn.",
+      "info": "Ako (Lễ hội) là phiên bản giới hạn của Ako, chuyên dụng cho các Raid không có giáp phản đòn. Cô ấy cung cấp khả năng hỗ trợ tuyệt vời."
+    },
+    {
+      "name": "Akane (Bunny)",
+      "image": "images/akane_bunny.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Mystic Raids.",
+      "info": "Akane (Bunny) là một DPS cho Mystic Raids. Tuy nhiên, có nhiều lựa chọn DPS khác tốt hơn."
+    },
+    {
+      "name": "Akari (NewYear)",
+      "image": "images/akari_new_year.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ T.S. cho đội hình Multi-DPS và Fury of Set.",
+      "info": "Akari (NewYear) là một Supporter mạnh mẽ, đặc biệt hữu dụng cho các đội hình Multi-DPS và Fury of Set."
+    },
+    {
+      "name": "Aru (NewYear)",
+      "image": "images/aru_new_year.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Chesed.",
+      "info": "Aru (NewYear) là DPS cho Raid Chesed. Tuy nhiên, có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Aru (Dress)",
+      "image": "images/aru_dress.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho mọi raid không có giáp phản đòn.",
+      "info": "Aru (Dress) là một Supporter mạnh mẽ, chuyên dụng cho các Raid không có giáp phản đòn. Cô ấy cung cấp khả năng hỗ trợ tuyệt vời."
+    },
+    {
+      "name": "Aris (Maid)",
+      "image": "images/aris_maid.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho ShiroKuro.",
+      "info": "Aris (Maid) là DPS chính cho Raid ShiroKuro. Cô ấy gây ra lượng sát thương lớn."
+    },
+    {
+      "name": "Asuna (Bunny)",
+      "image": "images/asuna_bunny.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Cost Regen, Perorodzilla, giảm DEF AoE.",
+      "info": "Asuna (Bunny) cung cấp khả năng hỗ trợ Cost Regen, hữu ích cho Perorodzilla và giảm DEF AoE."
+    },
+    {
+      "name": "Atsuko",
+      "image": "images/atsuko.png",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho Hieronymus, Kurokage, và Fury of Set.",
+      "info": "Atsuko là một Tanker, có thể sử dụng cho Hieronymus, Kurokage, và Fury of Set."
+    },
+    {
+      "name": "Azusa",
+      "image": "images/azusa.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua (có thể farm được). DPS cho Hieronymus.",
+      "info": "Azusa là DPS cho Hieronymus, nhưng có thể farm được."
+    },
+    {
+      "name": "Azusa (Swimsuit)",
+      "image": "images/azusa_swimsuit.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Cân nhắc. DPS cho Mystic Raids.",
+      "info": "Azusa (Swimsuit) là DPS cho Mystic Raids, hãy cân nhắc nếu bạn cần DPS cho loại Raid này."
+    },
+    {
+      "name": "Cherino",
+      "image": "images/cherino.png",
+      "rarity": "Thường",
+      "role": "Tấn công/Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. DPS/Support cho Piercing Raids và Cost Regen.",
+      "info": "Cherino là một nhân vật đa năng, vừa có thể gây sát thương, vừa có thể hỗ trợ. Cô ấy hữu ích cho Piercing Raids và Cost Regen."
+    },
+    {
+      "name": "Cherino (Hot Spring)",
+      "image": "images/cherino_hot_spring.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. T.S. cho Mobbing Explosive content.",
+      "info": "Cherino (Hot Spring) là phiên bản đặc biệt của Cherino, tập trung vào khả năng gây sát thương diện rộng cho các nội dung Mobbing Explosive."
+    },
+    {
+      "name": "Chinatsu (Hot Spring)",
+      "image": "images/chinatsu_hot_spring.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Auto Attackers.",
+      "info": "Chinatsu (Hot Spring) là một Supporter, có khả năng buff cho các nhân vật Auto Attackers."
+    },
+    {
+      "name": "Chise (Swimsuit)",
+      "image": "images/chise_swimsuit.png",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Mystic AoE content và HOD.",
+      "info": "Chise (Swimsuit) là một Supporter, có khả năng buff cho các nội dung Mystic AoE và HOD."
+    },
+    {
+      "name": "Eimi",
+      "image": "images/eimi.png",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho Kaiten/Wakamo Hover.",
+      "info": "Eimi là một Tanker, có thể sử dụng cho Kaiten/Wakamo Hover."
+    },
+    {
+      "name": "Eimi (Swimsuit)",
+      "image": "images/eimi_swimsuit.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua nếu có S.Shizuko hoặc T.Yuuka. Hỗ trợ cho ShiroKuro/Goz/Fury of Set.",
+      "info": "Eimi (Swimsuit) là một Supporter, nhưng bạn có thể bỏ qua nếu có S.Shizuko hoặc T.Yuuka. Hỗ trợ cho ShiroKuro/Goz/Fury of Set."
+    },
+    {
+      "name": "Fubuki (Swimsuit)",
+      "image": "images/fubuki_swimsuit.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Gregorius?",
+      "info": "Fubuki (Swimsuit) là một DPS tiềm năng cho Gregorius, nhưng cần thêm thông tin để đánh giá."
+    },
+    {
+      "name": "Fuuka (NewYear)",
+      "image": "images/fuuka_new_year.png",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho hầu hết các raid và nội dung.",
+      "info": "Fuuka (NewYear) là một Supporter đa năng, có thể sử dụng trong nhiều tình huống khác nhau."
+    },
+    {
+      "name": "Hanako (Swimsuit)",
+      "image": "images/hanako_swimsuit.png",
+      "rarity": "FES",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho Kurokage, Perorodzilla.",
+      "info": "Hanako (Swimsuit) là một DPS mạnh mẽ, đặc biệt hiệu quả trong Kurokage và Perorodzilla."
+    },
+    {
+      "name": "Hare (Camp)",
+      "image": "images/hare_camp.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho mọi raid không có giáp phản đòn.",
+      "info": "Hare (Camp) là một Supporter chuyên dụng cho các Raid không có giáp phản đòn."
+    },
+    {
+      "name": "Haruna (Track)",
+      "image": "images/haruna_track.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ hồi máu cho đội hình di chuyển vị trí.",
+      "info": "Haruna (Track) cung cấp khả năng hồi máu, hữu ích cho các đội hình thường xuyên di chuyển vị trí."
+    },
+    {
+      "name": "Haruna (NewYear)",
+      "image": "images/haruna_new_year.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Kaiten và Explosive AoE.",
+      "info": "Haruna (NewYear) là DPS cho Kaiten và các nội dung Explosive AoE."
+    },
+    {
+      "name": "Haruka (NewYear)",
+      "image": "images/haruka_new_year.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua / Cân nhắc giảm Crit RES. Hỗ trợ cho Raids có Crit RES cao.",
+      "info": "Haruka (NewYear) có thể giảm Crit RES của đối phương, hữu ích cho các Raid có Crit RES cao."
+    },
+    {
+      "name": "Hina (Swimsuit)",
+      "image": "images/hina_swimsuit.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Kaiten P1.",
+      "info": "Hina (Swimsuit) là DPS cho giai đoạn 1 của Raid Kaiten."
+    },
+    {
+      "name": "Hina (Dress)",
+      "image": "images/hina_dress.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho All Explosive Raids.",
+      "info": "Hina (Dress) là một DPS mạnh mẽ cho tất cả các Raid hệ Explosive."
+    },
+    {
+      "name": "Hinata",
+      "image": "images/hinata.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Perorodzilla và Goz.",
+      "info": "Hinata là DPS cho Perorodzilla và Goz, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Hinata (Swimsuit)",
+      "image": "images/hinata_swimsuit.png",
+      "rarity": "FES",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí. DPS cho Kaiten/Gregorius.",
+      "info": "Hinata (Swimsuit) là DPS cho Kaiten/Gregorius."
+    },
+    {
+      "name": "Hiyori",
+      "image": "images/hiyori.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Hieronymus/Binah.",
+      "info": "Hiyori là một Supporter, có khả năng buff cho Hieronymus/Binah."
+    },
+    {
+      "name": "Hoshino",
+      "image": "images/hoshino.png",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua (có thể farm được). Tank PvP.",
+      "info": "Hoshino là một Tanker cho PvP, nhưng có thể farm được."
+    },
+    {
+      "name": "Hoshino (Swimsuit)",
+      "image": "images/hoshino_swimsuit.png",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho Explosive Raids và mọi nội dung không có giáp phản đòn.",
+      "info": "Hoshino (Swimsuit) là một Supporter mạnh mẽ cho Explosive Raids và các nội dung không có giáp phản đòn."
+    },
+    {
+      "name": "Hoshino (Battle)",
+      "image": "images/hoshino_battle.png",
+      "rarity": "FES",
+      "role": "Tấn công/Tank",
+      "roll_advice": "Bắt buộc phải quay. DPS và tank tất cả trong một.",
+      "info": "Hoshino (Battle) là một nhân vật đa năng, vừa có thể gây sát thương, vừa có thể tank."
+    },
+    {
+      "name": "Ichika",
+      "image": "images/ichika.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Kurokage.",
+      "info": "Ichika là DPS cho Raid Kurokage."
+    },
+    {
+      "name": "Iori",
+      "image": "images/iori.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Có thể farm được. DPS cho Piercing raids.",
+      "info": "Iori là DPS cho Piercing raids, và có thể farm được."
+    },
+    {
+      "name": "Iori (Swimsuit)",
+      "image": "images/iori_swimsuit.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Hieronymus/Kaiten.",
+      "info": "Iori (Swimsuit) là DPS cho Hieronymus/Kaiten."
+    },
+    {
+      "name": "Iroha",
+      "image": "images/iroha.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. T.S. cho Perorodzilla.",
+      "info": "Iroha là một Supporter, có khả năng buff cho Perorodzilla."
+    },
+    {
+      "name": "Izuna",
+      "image": "images/izuna.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Có thể farm được. DPS cho ShiroKuro.",
+      "info": "Izuna là DPS cho Raid ShiroKuro, nhưng có thể farm được."
+    },
+    {
+      "name": "Izuna (Swimsuit)",
+      "image": "images/izuna_swimsuit.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho All Mystic Raids.",
+      "info": "Izuna (Swimsuit) là một DPS mạnh mẽ cho tất cả các Raid hệ Mystic."
+    },
+    {
+      "name": "Kaede",
+      "image": "images/kaede.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Goz.",
+      "info": "Kaede là một Supporter, có khả năng buff cho Goz."
+    },
+    {
+      "name": "Kaho",
+      "image": "images/kaho.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Mystic Raids.",
+      "info": "Kaho là DPS cho Mystic Raids, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Kanna",
+      "image": "images/kanna.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Nhận 100 vé miễn phí. DPS cho tất cả các Yellow Raids.",
+      "info": "Kanna là DPS cho tất cả các Raid hệ Yellow."
+    },
+    {
+      "name": "Kanna (Swimsuit)",
+      "image": "images/kanna_swimsuit.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Binah.",
+      "info": "Kanna (Swimsuit) là một Supporter, có khả năng buff cho Binah."
+    },
+    {
+      "name": "Karin (Bunny)",
+      "image": "images/karin_bunny.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Perorodzilla.",
+      "info": "Karin (Bunny) là DPS cho Raid Perorodzilla."
+    },
+    {
+      "name": "Kasumi",
+      "image": "images/kasumi.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Cân nhắc. DPS cho Kurokage TMT.",
+      "info": "Kasumi là DPS cho Kurokage TMT, hãy cân nhắc nếu bạn cần DPS cho loại Raid này."
+    },
+    {
+      "name": "Kayoko (NewYear)",
+      "image": "images/kayoko_new_year.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho Blue Raids.",
+      "info": "Kayoko (NewYear) là một Supporter mạnh mẽ cho các Raid hệ Blue."
+    },
+    {
+      "name": "Kayoko (Dress)",
+      "image": "images/kayoko_dress.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Binah.",
+      "info": "Kayoko (Dress) là DPS cho Raid Binah, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Kazusa",
+      "image": "images/kazusa.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Piercing Raids.",
+      "info": "Kazusa là DPS cho Piercing Raids, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Kazusa (Band)",
+      "image": "images/kazusa_band.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Fury of Set.",
+      "info": "Kazusa (Band) là DPS cho Raid Fury of Set."
+    },
+    {
+      "name": "Kikyou",
+      "image": "images/kikyou.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay hoặc Bắt buộc phải quay. Hỗ trợ cho Kurokage.",
+      "info": "Kikyou là một Supporter mạnh mẽ cho Raid Kurokage."
+    },
+    {
+      "name": "Kirara",
+      "image": "images/kirara.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Elastic raids.",
+      "info": "Kirara là DPS cho các Raid hệ Elastic, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Kokona",
+      "image": "images/kokona.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay nếu cần healer hoặc Fury of Set. Healer cho Kurokage.",
+      "info": "Kokona là một Healer mạnh mẽ, có thể sử dụng trong nhiều tình huống khác nhau."
+    },
+    {
+      "name": "Kotama (Camp)",
+      "image": "images/kotama_camp.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho HOD.",
+      "info": "Kotama (Camp) là một Supporter, có khả năng buff cho HOD."
+    },
+    {
+      "name": "Kotori (Cheer Squad)",
+      "image": "images/kotori_cheer_squad.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho General Content/Light armor swarms.",
+      "info": "Kotori (Cheer Squad) là DPS cho các nội dung thông thường và các đợt tấn công có giáp nhẹ."
+    },
+    {
+      "name": "Koyuki",
+      "image": "images/koyuki.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Goz Perorodzilla.",
+      "info": "Koyuki là DPS cho Goz và Perorodzilla, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Makoto",
+      "image": "images/makoto.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay/Nhận 100 vé miễn phí. DPS cho Chesed.",
+      "info": "Makoto là DPS cho Raid Chesed."
+    },
+    {
+      "name": "Mari (Track)",
+      "image": "images/mari_track.png",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Cân nhắc. Healer cho Striker Healer Hieronymus.",
+      "info": "Mari (Track) là một Healer, có thể sử dụng cho Striker Healer Hieronymus."
+    },
+    {
+      "name": "Marina",
+      "image": "images/marina.png",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho PvP.",
+      "info": "Marina là một Tanker cho PvP."
+    },
+    {
+      "name": "Mashiro (Swimsuit)",
+      "image": "images/mashiro_swimsuit.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "PvP. DPS cho Mystic Raids.",
+      "info": "Mashiro (Swimsuit) là một DPS mạnh mẽ cho Mystic Raids và PvP."
+    },
+    {
+      "name": "Megu",
+      "image": "images/megu.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho PvP.",
+      "info": "Megu là một DPS cho PvP, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Meru",
+      "image": "images/meru.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Wakamo Hover.",
+      "info": "Meru là DPS cho Raid Wakamo Hover."
+    },
+    {
+      "name": "Midori (Maid)",
+      "image": "images/midori_maid.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Single Target Elastic content.",
+      "info": "Midori (Maid) là DPS cho các nội dung Single Target Elastic."
+    },
+    {
+      "name": "Mika",
+      "image": "images/mika_fes.png",
+      "rarity": "FES",
+      "role": "Tấn công",
+      "roll_advice": "BẮT BUỘC PHẢI QUAY. DPS cho tất cả các Yellow Raids.",
+      "info": "Mika là một DPS cực kỳ mạnh mẽ, bắt buộc phải có cho các Raid hệ Yellow."
+    },
+    {
+      "name": "Mimori",
+      "image": "images/mimori.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Có thể farm được. Hỗ trợ cho ShiroKuro.",
+      "info": "Mimori là một Supporter cho Raid ShiroKuro, nhưng có thể farm được."
+    },
+    {
+      "name": "Mimori (Swimsuit)",
+      "image": "images/mimori_swimsuit.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho ShiroKuro.",
+      "info": "Mimori (Swimsuit) là một Supporter cho Raid ShiroKuro."
+    },
+    {
+      "name": "Mina",
+      "image": "images/mina.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay cho Gregorius / nếu không thì bỏ qua. Hỗ trợ cho Gregorius.",
+      "info": "Mina là một Supporter mạnh mẽ cho Raid Gregorius, nhưng nếu bạn không có ý định đánh Raid này, có thể bỏ qua."
+    },
+    {
+      "name": "Minori",
+      "image": "images/minori.png",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho Gregorius.",
+      "info": "Minori là DPS chính cho Raid Gregorius."
+    },
+    {
+      "name": "Mikoto",
+      "image": "images/misaka_mikoto.png",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Cân nhắc. DPS cho Chesed.",
+      "info": "Misaka Mikoto là DPS cho Raid Chesed, nhưng là nhân vật Collab nên có thể không còn xuất hiện lại."
+    },
+    {
+      "name": "Miyako",
+      "image": "images/miyako.png",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho HOD.",
+      "info": "Miyako là một Tanker cho Raid HOD."
+    },
+    {
+      "name": "Miyako (Swimsuit)",
+      "image": "images/miyako_swimsuit.png",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho Gregorius.",
+      "info": "Miyako (Swimsuit) là một Tanker cho Raid Gregorius."
+    },
+    {
+      "name": "Miyu",
+      "image": "images/miyu.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Piercing Raids.",
+      "info": "Miyu là một Supporter cho Piercing Raids."
+    },
+    {
+      "name": "Moe",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Chesed.",
+      "info": "Moe là DPS cho Raid Chesed, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Moe (Swimsuit)",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Elastic armored enemies",
+      "info": "Moe (Swimsuit) là DPS cho các kẻ địch có giáp Elastic."
+    },
+    {
+      "name": "Momoi (Maid)",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Single Target Elastic content.",
+      "info": "Momoi (Maid) là DPS cho các nội dung Single Target Elastic."
+    },
+    {
+      "name": "Mutsuki (NewYear)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho Goz và Perorodzilla.",
+      "info": "Mutsuki (NewYear) là một DPS mạnh mẽ cho Raid Goz và Perorodzilla."
+    },
+    {
+      "name": "Nagisa",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho All Explosive Raids.",
+      "info": "Nagisa là một DPS mạnh mẽ cho tất cả các Raid hệ Explosive."
+    },
+    {
+      "name": "Natsu",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho Perorodzilla.",
+      "info": "Natsu là một Tanker cho Raid Perorodzilla."
+    },
+    {
+      "name": "Neru (Bunny)",
+      "rarity": "Giới hạn",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho PvP.",
+      "info": "Neru (Bunny) là một Tanker cho PvP."
+    },
+    {
+      "name": "Noa",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Cân nhắc. Hỗ trợ cho Goz Binah.",
+      "info": "Noa là một Supporter, có khả năng buff cho Goz và Binah."
+    },
+    {
+      "name": "Nodoka (Hot Spring)",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua hoặc Bắt buộc phải quay nếu thiếu healer. Healer cho Hieronymus hoặc PvP.",
+      "info": "Nodoka (Hot Spring) là một Healer, có thể sử dụng cho Hieronymus hoặc PvP. Tuy nhiên, nếu bạn đã có đủ healer, có thể bỏ qua."
+    },
+    {
+      "name": "Nonomi (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Hieronymus.",
+      "info": "Nonomi (Swimsuit) là DPS cho Raid Hieronymus, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Reisa",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho Perorodzilla.",
+      "info": "Reisa là một Tanker cho Raid Perorodzilla."
+    },
+    {
+      "name": "Renge",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho N/A.",
+      "info": "Renge là DPS cho N/A."
+    },
+    {
+      "name": "Rumi",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay nếu không có Striker Healer. Healer cho Perorodzilla / Hieronymus.",
+      "info": "Rumi là một Healer mạnh mẽ, đặc biệt hữu ích nếu bạn không có Striker Healer. Cô ấy có thể hỗ trợ cho Perorodzilla và Hieronymus."
+    },
+    {
+      "name": "Saori",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Kurokage.",
+      "info": "Saori là DPS cho Raid Kurokage, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Saki",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay nếu không có Chihiro hoặc Bỏ qua. DPS cho HOD.",
+      "info": "Saki là DPS cho Raid HOD. Tuy nhiên, nếu bạn đã có Chihiro, có thể bỏ qua."
+    },
+    {
+      "name": "Saki (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho Gregorius.",
+      "info": "Saki (Swimsuit) là một Supporter mạnh mẽ cho Raid Gregorius."
+    },
+    {
+      "name": "Sakurako",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Cân nhắc. DPS cho GOZ.",
+      "info": "Sakurako là DPS cho Raid GOZ, hãy cân nhắc nếu bạn cần DPS cho loại Raid này."
+    },
+    {
+      "name": "Serika (NewYear)",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Chesed.",
+      "info": "Serika (NewYear) là một Supporter cho Raid Chesed."
+    },
+    {
+      "name": "Serika (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Mystic Gregorius.",
+      "info": "Serika (Swimsuit) là DPS cho Mystic Gregorius, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Shigure",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho General Content/Light armor swarms.",
+      "info": "Shigure là DPS cho các nội dung thông thường và các đợt tấn công có giáp nhẹ."
+    },
+    {
+      "name": "Shigure (Hot Spring)",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua hoặc Bắt buộc phải quay cho 10-unit raid. Healer cho Kurokage, Hieronymus, hoặc 10-unit raid.",
+      "info": "Shigure (Hot Spring) là một Healer, có thể sử dụng cho Kurokage, Hieronymus, hoặc 10-unit raid. Tuy nhiên, nếu bạn đã có đủ healer, có thể bỏ qua trừ khi bạn cần cho 10-unit raid."
+    },
+    {
+      "name": "Shiroko",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Có thể farm được. DPS cho Kaiten P2.",
+      "info": "Shiroko là DPS cho giai đoạn 2 của Raid Kaiten, và có thể farm được."
+    },
+    {
+      "name": "Shiroko (Cycling)",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Perorodzilla / ShiroKuro.",
+      "info": "Shiroko (Cycling) là DPS cho Perorodzilla và ShiroKuro, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Shiroko (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho High DEF raids và PvP.",
+      "info": "Shiroko (Swimsuit) là một DPS mạnh mẽ cho các Raid có DEF cao và PvP."
+    },
+    {
+      "name": "Shiroko (Terror)",
+      "rarity": "FES",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho All Explosive Raids",
+      "info": "Shiroko (Terror) là một DPS mạnh mẽ cho tất cả các Raid hệ Explosive."
+    },
+    {
+      "name": "Shokuho",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Cân nhắc. Hỗ trợ cho HOD và Wakamo Hovercraft.",
+      "info": "Shokuhou Misaki là một Supporter cho HOD và Wakamo Hovercraft, nhưng là nhân vật Collab nên có thể không còn xuất hiện lại."
+    },
+    {
+      "name": "Shun",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho PvP/Speedrun Raids.",
+      "info": "Shun là DPS cho PvP và Speedrun Raids."
+    },
+    {
+      "name": "Sumire",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Chesed.",
+      "info": "Sumire là DPS cho Raid Chesed, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Toki",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Hieronymus.",
+      "info": "Toki là DPS cho Raid Hieronymus, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Toki (Bunny)",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Kaiten.",
+      "info": "Toki (Bunny) là DPS cho Raid Kaiten, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Tsubaki (Guide)",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Hỗ trợ cho Multi-DPS teams và Fury of Set.",
+      "info": "Tsubaki (Guide) là một Supporter cho Multi-DPS teams và Fury of Set."
+    },
+    {
+      "name": "Tsukuyo",
+      "rarity": "Thường",
+      "role": "Tank",
+      "roll_advice": "Bỏ qua. Tank cho Kaiten / PvP.",
+      "info": "Tsukuyo là một Tanker cho Raid Kaiten và PvP."
+    },
+    {
+      "name": "Ui",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay. Hỗ trợ cho Team dependant, giảm cost.",
+      "info": "Ui là một Supporter mạnh mẽ, đặc biệt hữu ích cho các đội hình phụ thuộc vào Team và khả năng giảm cost."
+    },
+    {
+      "name": "Ui (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bắt buộc phải quay/Bắt buộc phải quay/Nhận 100 vé miễn phí. Hỗ trợ cho Heavy Armored raids.",
+      "info": "Ui (Swimsuit) là một Supporter mạnh mẽ, chuyên dụng cho các Raid có giáp nặng."
+    },
+    {
+      "name": "Umika",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Mystic Raids và Fury of Set.",
+      "info": "Umika là DPS cho Mystic Raids và Fury of Set, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Utaha (Cheer Squad)",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Cân nhắc. DPS cho ShiroKuro Goz.",
+      "info": "Utaha (Cheer Squad) là DPS cho ShiroKuro và Goz, hãy cân nhắc nếu bạn cần DPS cho loại Raid này."
+    },
+    {
+      "name": "Wakamo",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay. DPS cho All Mystic Raids.",
+      "info": "Wakamo là một DPS mạnh mẽ cho tất cả các Raid hệ Mystic."
+    },
+    {
+      "name": "Wakamo (Swimsuit)",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho HOD.",
+      "info": "Wakamo (Swimsuit) là DPS cho Raid HOD, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Yoshimi (Band)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bắt buộc phải quay hoặc Bỏ qua. DPS cho Fury of Set.",
+      "info": "Yoshimi (Band) là DPS cho Raid Fury of Set. Tuy nhiên, bạn có thể cân nhắc tùy vào tình hình đội hình của mình."
+    },
+    {
+      "name": "Yuuka (Track)",
+      "rarity": "Giới hạn",
+      "role": "Tank",
+      "roll_advice": "Bắt buộc phải quay. Tank cho Goz.",
+      "info": "Yuuka (Track) là một Tanker mạnh mẽ cho Raid Goz."
+    },
+    {
+      "name": "Yukari",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS cho Kurokage.",
+      "info": "Yukari là DPS cho Raid Kurokage, nhưng có nhiều lựa chọn tốt hơn."
+    },
+    {
+      "name": "Saori (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí. DPS + Utility chính của Blue Chokmah.",
+      "info": "Có khả năng gây sát thương diện rộng kèm hiệu ứng Chill, giúp làm chậm kẻ địch.DPS Mystic hệ Heavy."
+    },
+    {
+      "name": "Hiyori (Swimsuit)",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua/Nhận 100 vé miễn phí. DPS đạn vàng (gần giống Mika nhưng yếu hơn).",
+      "info": "Có khả năng gây sát thương lớn lên một mục tiêu duy nhất và có thể liên tục sử dụng EX skill nếu có đủ EX Charge."
+    },
+    {
+      "name": "Hina",
+      "rarity": "Giới hạn",
+      "role": "Tấn công",
+      "roll_advice": "Có thể farm được.",
+      "info": "Hinature là một DPS mạnh mẽ với khả năng gây sát thương nổ diện rộng, rất hiệu quả với kẻ địch giáp nặng."
+    },
+    {
+      "name": "Miku",
+      "rarity": "Không bao giờ re-roll",
+      "role": "Chưa biết",
+      "roll_advice": "Không còn cơ hội... thật đấy :)",
+      "info": "Mi mi mi mi mi miku."
+    },
+    {
+      "name": "Seia",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Nên quay. Giảm cost và tăng tốc hồi cost.",
+      "info": "Có khả năng giảm cost EX Skill. Ngoài ra, tăng tốc độ hồi cost (đơn giản là Ui nhưng tuyệt hơn)."
+    },
+    {
+      "name": "Rio",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Nên quay.",
+      "info": "Có khả năng tăng ATK cho đồng đội và sao chép EX Skill, giúp tăng cường đáng kể khả năng tấn công của đội hình."
+    },
+    {
+      "name": "Hifumi (Swimsuit)",
+      "image": "images/hifumi_swimsuit.png",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Có thể farm được. Hỗ trợ T.S. cho Chesed.",
+      "info": "Hifumi (Swimsuit) là một Supporter cho Raid Chesed, và có thể farm được."
+    }
+  ]

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tra cứu banner - Hoyuuna</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HTML5 website template">
+    <meta name="keywords" content="global, template, html, sass, jquery">
+    <meta name="author" content="Bucky Maler">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        #searchContainer {
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            outline: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        #searchInput:focus {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        #result .character {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease;
+            display: grid;
+            grid-template-columns: 1fr 100px;
+            gap: 10px;
+            align-items: center;
+        }
+
+        #result .character:hover {
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+        }
+
+        #result .character .info {}
+
+        #result .character .image {
+            grid-column: 2;
+        }
+
+        #result .character img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+        <img src="assets/img/logo.png" alt="Simp Hoxilo">
+        <p>Hoyuuna</p>
+    </a>
+    <p class="device-notification--message">Chào mừng bạn đến với trang tra cứu banner học sinh Blue Archive của Hoyuuna!</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+    <div class="container"><div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+            <div class="l-wrapper">
+                <header class="header">
+                    <a class="header--logo" href="#0">
+                        <img src="assets/img/logo.png" alt="Global">
+                        <p>Hoyuuna</p>
+                    </a>
+                    <button class="header--cta cta">Hire Us</button>
+                    <div class="header--nav-toggle">
+                        <span></span>
+                    </div>
+                </header>
+                <nav class="l-side-nav">
+                    <ul class="side-nav">
+                        <li class="is-active"><span>Giới thiệu</span></li>
+                        <li><span>Tra cứu</span></li>
+                    </ul>
+                </nav>
+                <ul class="l-main-content main-content">
+                    <li class="l-section section section--is-active">
+                        <div class="intro">
+                            <div class="intro--banner">
+                                <h1>Giới thiệu</h1>
+                                <img src="assets/img/introduction-visual.png" alt="Welcome">
+                            </div>
+                            <div class="intro--options">
+                                <p>Chào mừng bạn đến với trang công cụ tra cứu banner học sinh bởi Hoyuuna! Công cụ được dùng để nhận những gợi ý trước khi ra quyết định gacha của bạn! Xin lưu ý thông tin được cung cấp chỉ mang tính chất tham khảo, quyết định cuối cùng thuộc về bạn. Chúng tôi không chịu trách nhiệm đối với bất kỳ hậu quả nào phát sinh từ việc sử dụng thông tin này.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="l-section section">
+                        <div class="work">
+                            <h2>Tra cứu</h2>
+                            <div class="work--lockup">
+                                <div class="card" id="searchContainer">
+                                    <input type="text" id="searchInput" placeholder="Tìm kiếm học sinh...">
+                                </div>
+                                <div class="card" id="result"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="outer-nav">
+        <li class="is-active">Giới thiệu</li>
+        <li>Tra cứu</li>
+    </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+<script src="characterSearch.js"></script>
+</body>
+</html>
