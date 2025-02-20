@@ -139,6 +139,10 @@
           formSubmitted("Có lỗi xảy ra. Vui lòng thử lại sau.");
         });
     }
+                function formSubmitted(message) {
+            document.getElementById("formMessage").innerHTML = message;
+            document.getElementById("contributionForm").reset();
+        }
     </script>
                         </div>
                     </li>
