@@ -69,10 +69,69 @@
                         <div class="work">
                             <h2>Đóng góp</h2>
                             <div class="work--lockup">
-                                <div class="card">
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4WETsQufAosVL2GheesrrAsIve31xWidRW5zldLSVRsm9ug/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0" style="display: block; margin: 0 auto;">Đang tải…</iframe>
-                                </div>
-                            </div>
+        <div class="card">
+            <form id="contributionForm">
+                <label for="name">Tên của bạn (nickname...):</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="discord">Tên tài khoản Discord (tên đăng nhập)/email:</label><br>
+                <input type="text" id="discord" name="discord" required><br><br>
+
+                <label for="studentName">Tên học sinh (không có họ) + form (nếu có):</label><br>
+                <input type="text" id="studentName" name="studentName" required><br><br>
+
+                <label for="rarity">Độ hiếm:</label><br>
+                <select id="rarity" name="rarity" required>
+                    <option value="">Chọn độ hiếm</option>
+                    <option value="Thường">Thường</option>
+                    <option value="Giới hạn (limited)">Giới hạn (limited)</option>
+                    <option value="FES (limited fes)">FES (limited fes)</option>
+                </select><br><br>
+
+                <label for="suggestion">Gợi ý banner:</label><br>
+                <input type="text" id="suggestion" name="suggestion" required><br><br>
+
+                <label for="info">Thông tin:</label><br>
+                <textarea id="info" name="info" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="role">Vai trò:</label><br>
+                <input type="text" id="role" name="role" required><br><br>
+
+                <label for="action">Bạn muốn làm gì?:</label><br>
+                <textarea id="action" name="action" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="button" onclick="submitForm()">Gửi đóng góp</button>
+            </form>
+            <div id="formMessage"></div>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var form = document.getElementById("contributionForm");
+            var data = {
+                name: form.name.value,
+                discord: form.discord.value,
+                studentName: form.studentName.value,
+                rarity: form.rarity.value,
+                suggestion: form.suggestion.value,
+                info: form.info.value,
+                personalInfo: form.personalInfo.checked,
+                studentInfo: form.studentInfo.checked,
+                legalInfo: form.legalInfo.checked,
+                violationInfo: form.violationInfo.checked,
+                role: form.role.value,
+                action: form.action.value,
+            };
+
+            google.script.run.withSuccessHandler(formSubmitted).processForm(data);
+        }
+
+        function formSubmitted(message) {
+            document.getElementById("formMessage").innerHTML = "Đóng góp của bạn đã được gửi thành công!";
+            document.getElementById("contributionForm").reset();
+        }
+    </script>
                         </div>
                     </li>
                 </ul>
