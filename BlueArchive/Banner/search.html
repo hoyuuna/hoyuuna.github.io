@@ -101,7 +101,7 @@
                     <option value="Hỗ trợ">Hỗ trợ</option>
                 </select><br><br>
 
-                <button type="button" onclick="submitForm()" style="background-color: #0f33ff; color: white; border: none; padding: 10px 20px; cursor: pointer; width: 100%; box-sizing: border-box;">Gửi đóng góp</button>
+                <button type="button" onclick="submitForm()" style="background-color: #0f33ff; color: white; border: none; padding: 10px 20px; cursor: pointer; width: 100%; box-sizing: border-box;">Gửi đóng góp (nhấn xong đợi 5-10s)</button>
             </form>
             <div id="formMessage" style="color: white;"></div>
         </div>
@@ -132,11 +132,11 @@
         }
       )
         .then((response) => {
-          formSubmitted("Cảm ơn bạn đã đóng góp cho tool tra cứu ヾ(≧▽≦*)o");
+          formSubmitted("Thành công. Cảm ơn bạn đã đóng góp cho tool tra cứu!");
         })
         .catch((error) => {
           console.error("Lỗi:", error);
-          formSubmitted("Có lỗi xảy ra. Vui lòng thử lại sau ~(>_<。)＼");
+          formSubmitted("Có lỗi xảy ra. Vui lòng thử lại sau D:");
         });
     }
                 function formSubmitted(message) {
