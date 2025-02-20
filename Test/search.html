@@ -9,61 +9,7 @@
     <meta name="keywords" content="global, template, html, sass, jquery">
     <meta name="author" content="Bucky Maler">
     <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        #searchContainer {
-            margin-bottom: 20px;
-        }
 
-        #searchInput {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            box-sizing: border-box;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-            outline: none;
-            transition: box-shadow 0.3s ease;
-        }
-
-        #searchInput:focus {
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-        }
-
-        #result {
-            margin-top: 20px;
-        }
-
-        #result .character {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-            transition: box-shadow 0.3s ease;
-            display: grid;
-            grid-template-columns: 1fr 100px;
-            gap: 10px;
-            align-items: center;
-        }
-
-        #result .character:hover {
-            box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
-        }
-
-        #result .character .info {}
-
-        #result .character .image {
-            grid-column: 2;
-        }
-
-        #result .character img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 <body>
 
@@ -132,5 +78,9 @@
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
 <script src="characterSearch.js"></script>
+<script>document.getElementById('result').addEventListener('wheel', function(event) {
+    event.stopPropagation();
+});
+</script>
 </body>
 </html>
