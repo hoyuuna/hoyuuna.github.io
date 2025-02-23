@@ -889,6 +889,20 @@
       "info": "Có khả năng tăng ATK cho đồng đội và sao chép EX Skill, giúp tăng cường đáng kể khả năng tấn công của đội hình."
     },
     {
+      "name": "Marina (Qipao)",
+      "rarity": "Thường",
+      "role": "Tấn công",
+      "roll_advice": "Bỏ qua. DPS fake cho F100+ Chokmah",
+      "info": "DPS nhưng chỉ có tác dụng hỗ trợ là chính. Nên dùng Mika thay thế."
+    },
+    {
+      "name": "Tomoe (Qipao)",
+      "rarity": "Thường",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. Shield + Ally Repos bình thường với một số buff",
+      "info": "Tôi tìm 30 phút rồi... không có lí do gì để roll cả."
+    },
+    {
       "name": "Hifumi (Swimsuit)",
       "image": "images/hifumi_swimsuit.png",
       "rarity": "Thường",
