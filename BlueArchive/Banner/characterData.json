@@ -903,6 +903,13 @@
       "info": "Tôi tìm 30 phút rồi... không có lí do gì để roll cả."
     },
     {
+      "name": "Maki (Camp)",
+      "rarity": "Giới hạn",
+      "role": "Hỗ trợ",
+      "roll_advice": "Bỏ qua. kh bằng nagisa",
+      "info": "đạn đỏ giáp đỏ EX skill 4 cost gây 864 ~ 1624 sát thương lên 1 kẻ định normal skill cứ 45 giây tăng sát thương đạn đỏ lên 28~53,2% trong 25 giây Passive skill tăng sát thương lên 14% ~ 26% sub skill tăng crit lên 9% ~ 17% dùng thì tạm đc nhưng kh bằng nagisa"
+    },
+    {
       "name": "Hifumi (Swimsuit)",
       "image": "images/hifumi_swimsuit.png",
       "rarity": "Thường",
