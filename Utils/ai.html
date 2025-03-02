@@ -49,7 +49,7 @@
             const apiKey = 'AIzaSyARQFs5Uje7v7tAsN77-_yo1XojyC_y-e8';
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
-            const prompt = `Giải thích về lý do tôi bị phạt trong server Discord: ${reason} ngoài ra nói cho tôi những kinh nghiệm cho lần sau`;
+            const prompt = `Giải thích ngắn về lý do tôi bị phạt trong server Discord: ${reason} ngoài ra nói cho tôi những kinh nghiệm cho lần sau`;
 
             try {
                 const response = await fetch(apiUrl, {
