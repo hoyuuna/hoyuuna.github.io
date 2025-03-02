@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý do bị ban - Hoyuuna Docs</title>
+    <link rel="stylesheet" href="wiki-css/css-main.css">
+    <link rel="stylesheet" href="wiki-css/css-mobile.css" media="screen and (max-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;800&family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <span class="name">Hoyuuna</span><span class="wiki"> Utils</span>
+        </h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2 id="ban-reason-title">Lý do bạn bị phạt</h2>
+            <p id="ban-reason"></p>
+            <p id="gemini-response"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Hoyuuna. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const reason = urlParams.get('reason');
+        const banReasonElement = document.getElementById('ban-reason');
+        const geminiResponseElement = document.getElementById('gemini-response');
+
+        if (reason) {
+            banReasonElement.textContent = `Lý do: ${decodeURIComponent(reason)}`;
+            getGeminiResponse(decodeURIComponent(reason));
+        } else {
+            banReasonElement.textContent = 'Không có lý do được cung cấp.';
+        }
+
+        async function getGeminiResponse(reason) {
+
+            const apiKey = 'AIzaSyARQFs5Uje7v7tAsN77-_yo1XojyC_y-e8';
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+
+            const prompt = `Giải thích chi tiết về lý do bị phạt sau đây: ${reason}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{ text: prompt }],
+                        }],
+                    }),
+                });
+
+                const data = await response.json();
+                const geminiText = data.candidates[0].content.parts[0].text;
+                geminiResponseElement.textContent = geminiText;
+            } catch (error) {
+                console.error('Lỗi khi gọi Gemini API:', error);
+                geminiResponseElement.textContent = 'Đã xảy ra lỗi khi truy vấn thông tin.';
+            }
+        }
+    </script>
+</body>
+</html>
