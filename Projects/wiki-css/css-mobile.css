@@ -1,0 +1,52 @@
+.container {
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+    padding: 1rem; /* Giảm padding cho mobile */
+    border-radius: 12px; /* Giảm bo góc cho gọn hơn */
+}
+
+.sidebar h2 {
+    font-size: 1.2rem; /* Giảm kích thước chữ cho phù hợp */
+}
+
+.sidebar a {
+    padding: 0.3rem 0.5rem; /* Giảm padding cho link */
+    font-size: 0.95rem; /* Giảm kích thước chữ */
+}
+
+.main-content {
+    padding: 1rem; /* Giảm padding cho mobile */
+    border-radius: 12px; /* Giảm bo góc */
+}
+
+.main-content h2 {
+    font-size: 1.5rem; /* Giảm kích thước tiêu đề */
+}
+
+.main-content h3 {
+    font-size: 1.2rem; /* Giảm kích thước tiêu đề phụ */
+}
+
+.main-content p {
+    font-size: 1rem; /* Giảm kích thước chữ cho dễ đọc */
+}
+
+header {
+    padding: 0.8rem; /* Giảm padding header */
+}
+
+header h1 {
+    font-size: 1.2rem; /* Giảm kích thước tiêu đề header */
+}
+
+footer {
+    margin: 1rem; /* Giảm margin */
+    padding: 1rem; /* Giảm padding */
+    border-radius: 12px; /* Giảm bo góc */
+}
