@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="wiki-css/css-main.css">
     <link rel="stylesheet" href="wiki-css/css-mobile.css" media="screen and (max-width: 768px)">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;800&family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
@@ -18,8 +19,8 @@
 
     <div class="container">
         <div class="main-content">
-            <h2 id="ban-reason-title">Lý do bạn bị phạt</h2>
-            <p id="ban-reason"></p>
+            <h2 id="ban-reason-title">Tìm hiểu lí do bị phạt</h2>
+            <div id="ban-reason"></div>
             <p id="gemini-response"></p>
         </div>
     </div>
@@ -35,18 +36,20 @@
         const geminiResponseElement = document.getElementById('gemini-response');
 
         if (reason) {
-            banReasonElement.textContent = `Lý do: ${decodeURIComponent(reason)}`;
-            getGeminiResponse(decodeURIComponent(reason));
+            const decodedReason = decodeURIComponent(reason);
+            const htmlReason = marked.parse(decodedReason);
+            banReasonElement.innerHTML = htmlReason;
+            getGeminiResponse(decodedReason);
         } else {
             banReasonElement.textContent = 'Không có lý do được cung cấp.';
         }
 
         async function getGeminiResponse(reason) {
-
+            // Thay thế 'YOUR_API_KEY' bằng API key của bạn
             const apiKey = 'AIzaSyARQFs5Uje7v7tAsN77-_yo1XojyC_y-e8';
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
-            const prompt = `Giải thích chi tiết về lý do bị phạt sau đây: ${reason}`;
+            const prompt = `Giải thích ngắn gọn về lý do tôi bị phạt trong server Discord: ${reason}`;
 
             try {
                 const response = await fetch(apiUrl, {
