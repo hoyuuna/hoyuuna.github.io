@@ -21,7 +21,7 @@
         <div class="main-content">
             <h2 id="ban-reason-title">Tìm hiểu lí do bị phạt</h2>
             <div id="ban-reason"></div>
-            <p id="gemini-response"></p>
+            <div id="gemini-response"></div>
         </div>
     </div>
 
@@ -65,8 +65,9 @@
                 });
 
                 const data = await response.json();
+                console.log(data); // Kiểm tra phản hồi từ Gemini API
                 const geminiText = data.candidates[0].content.parts[0].text;
-                geminiResponseElement.textContent = geminiText;
+                geminiResponseElement.innerHTML = marked.parse(geminiText); // Chuyển đổi và hiển thị
             } catch (error) {
                 console.error('Lỗi khi gọi Gemini API:', error);
                 geminiResponseElement.textContent = 'Đã xảy ra lỗi khi truy vấn thông tin.';
