@@ -4,185 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoshino - Hoyuuna Docs</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: linear-gradient(135deg, #e8f0fe, #bbdefb, #f3e5f5);
-            color: #333;
-            line-height: 1.6;
-            min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-            font-family: 'Be Vietnam Pro', sans-serif;
-            font-weight: 400;
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-            z-index: -1;
-        }
-
-        header {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(15px);
-            color: #1976d2;
-            padding: 1rem;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        header h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            font-family: 'League Spartan', sans-serif;
-            user-select: none; 
-            -webkit-user-select: none; 
-            -moz-user-select: none; 
-            -ms-user-select: none; 
-        }
-
-        header h1 .name {
-            color: #000; 
-        }
-
-        header h1 .wiki {
-            color: #1976d2; 
-        }
-
-        .container {
-            display: flex;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
-            gap: 2rem;
-            min-height: calc(100vh - 4rem);
-        }
-
-        .sidebar {
-            width: 300px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 24px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: calc(4rem + 1rem);
-            height: fit-content;
-            max-height: calc(100vh - 6rem - 1rem);
-            overflow-y: auto;
-            z-index: 5;
-        }
-
-        .sidebar h2 {
-            color: #1976d2;
-            font-size: 1.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-        }
-
-        .sidebar ul {
-            list-style: none;
-        }
-
-        .sidebar ul li {
-            margin-bottom: 1rem;
-        }
-
-        .sidebar a {
-            color: #42a5f5;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 12px;
-            display: block;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-
-        .sidebar a:hover {
-            background: #42a5f5;
-            color: #fff;
-        }
-
-        .main-content {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 24px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .main-content h2 {
-            color: #1976d2;
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-        }
-
-        .main-content h3 {
-            color: #333;
-            font-size: 1.4rem;
-            font-weight: 800;
-            margin: 1.5rem 0 1rem;
-        }
-
-        .main-content p {
-            color: #555;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .main-content code {
-            background: #e0e0e0;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        footer {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            color: #333;
-            text-align: center;
-            padding: 1.5rem;
-            margin: 2rem;
-            border-radius: 24px;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer p {
-            color: #777;
-        }
-
-       
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                padding: 1rem;
-            }
-
-            .sidebar {
-                width: 100%;
-                position: static;
-                max-height: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="wiki-css/css-main.css">
+    <link rel="stylesheet" href="wiki-css/css-mobile.css" media="screen and (max-width: 768px)">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;800&family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -193,7 +16,6 @@
         </h1>
     </header>
 
-  
     <div class="container">
       
         <div class="sidebar">
@@ -207,76 +29,72 @@
             </ul>
         </div>
 
-        
         <div class="main-content">
             <h2 id="introduction">Giới thiệu</h2>
             <p>Chào mừng bạn đến với trang tài liệu bot Hoshino - bot quản lí server bởi Hoyuuna</p>
 
             <h3 id="start">Bắt đầu</h3>
             <p>Để bắt đầu, hãy mời bot Hoshino vào server của bạn với link <a href="https://discord.com/oauth2/authorize?client_id=1345597351154421820">này</a></p>
-	    <p>Prefix của bot là <code>h!</code></p>
+            <p>Prefix của bot là <code>h!</code></p>
 
             <h3 id="util">Các lệnh tính năng</h3>
-	    <p><b>1. Lệnh help</b></p>
+            <p><b>1. Lệnh help</b></p>
             <p><code>h!help</code></p>
-	    <p>Sử dụng để xem danh sách và cách sử dụng của các lệnh</p>
+            <p>Sử dụng để xem danh sách và cách sử dụng của các lệnh</p>
             <p><code>h!help [lệnh]</code></p>
-	    <p>Sử dụng để xem cách sử dụng của lệnh cụ thể</p>
-	    <p><b>2. Lệnh AI</b></p>
+            <p>Sử dụng để xem cách sử dụng của lệnh cụ thể</p>
+            <p><b>2. Lệnh AI</b></p>
             <p><code>h!ai [câu hỏi]</code></p>
-	    <p>Hỏi và nhận câu trả lời từ AI</p>
-	    <p><b>3. Lệnh tóm tắt</b></p>
+            <p>Hỏi và nhận câu trả lời từ AI</p>
+            <p><b>3. Lệnh tóm tắt</b></p>
             <p><code>h!summary</code></p>
-	    <p>Sử dụng để tóm tắt nội dung đoạn chat trong khoảng thời gian 15 phút trước khi chạy lệnh. Tối đa 50 tin nhắn</p>
-	    <p><b>4. Lệnh avatar</b></p>
+            <p>Sử dụng để tóm tắt nội dung đoạn chat trong khoảng thời gian 15 phút trước khi chạy lệnh. Tối đa 50 tin nhắn</p>
+            <p><b>4. Lệnh avatar</b></p>
             <p><code>h!avatar [người dùng]</code></p>
-	    <p>Sử dụng để lấy ảnh avatar của người dùng cụ thể</p>
-	    <p><b>5. Lệnh ticket</b></p>
+            <p>Sử dụng để lấy ảnh avatar của người dùng cụ thể</p>
+            <p><b>5. Lệnh ticket</b></p>
             <p><code>h!ticket</code></p>
-	    <p>Sử dụng để mở một ticket hỗ trợ mới</p>
+            <p>Sử dụng để mở một ticket hỗ trợ mới</p>
             <p><code>h!ticket-close</code></p>
-	    <p>Sử dụng để đóng một ticket hỗ trợ (chỉ Admin mới có thể đóng)</p>
-
-
+            <p>Sử dụng để đóng một ticket hỗ trợ (chỉ Admin mới có thể đóng)</p>
 
             <h3 id="mod">Các lệnh quản lí</h3>
-	    <p><b>1. Lệnh warn</b></p>
+            <p><b>1. Lệnh warn</b></p>
             <p><code>h!warn [người dùng] [lí do]</code></p>
-	    <p>Sử dụng để cảnh cáo một người dùng cụ thể</p>
+            <p>Sử dụng để cảnh cáo một người dùng cụ thể</p>
             <p><code>h!unwarn</code></p>
-	    <p>Sử dụng để bỏ cảnh cáo một dùng cụ thể đã bị cảnh cáo trước đó</p>
-	    <p><b>2. Lệnh mute</b></p>
+            <p>Sử dụng để bỏ cảnh cáo một dùng cụ thể đã bị cảnh cáo trước đó</p>
+            <p><b>2. Lệnh mute</b></p>
             <p><code>h!mute [người dùng] [thời gian] [lí do]</code></p>
-	    <p>Sử dụng để hạn chế một người dùng cụ thể</p>
+            <p>Sử dụng để hạn chế một người dùng cụ thể</p>
             <p>Lưu ý: Bắt buộc phải nhập thời gian, nếu không nhập người dùng sẽ không bị mute</p>
             <p><code>h!unmute [người dùng]</code></p>
-	    <p>Sử dụng để bỏ hạn chế người dùng cụ thể đã bị hạn chế trước đó</p>
-	    <p><b>3. Lệnh kick</b></p>
+            <p>Sử dụng để bỏ hạn chế người dùng cụ thể đã bị hạn chế trước đó</p>
+            <p><b>3. Lệnh kick</b></p>
             <p><code>h!kick [người dùng] [lí do]</code></p>
-	    <p>Sử dụng để đuổi một người dùng cụ thể ra khỏi server</p>
-	    <p><b>4. Lệnh ban</b></p>
+            <p>Sử dụng để đuổi một người dùng cụ thể ra khỏi server</p>
+            <p><b>4. Lệnh ban</b></p>
             <p><code>h!ban [người dùng] [lí do]</code></p>
-	    <p>Sử dụng để cấm một người dùng cụ thể khỏi server</p>
-	    <p><b>5. Lệnh purge</b></p>
+            <p>Sử dụng để cấm một người dùng cụ thể khỏi server</p>
+            <p><b>5. Lệnh purge</b></p>
             <p><code>h!purge [số lượng]</code></p>
-	    <p>Xóa một lượng tin nhắn nhất định trong kênh hiện tại</p>
-	    <p><b>6. Lệnh lock</b></p>
+            <p>Xóa một lượng tin nhắn nhất định trong kênh hiện tại</p>
+            <p><b>6. Lệnh lock</b></p>
             <p><code>h!lock [kênh]</code></p>
-	    <p>Sử dụng để khóa ngăn chặn người dùng chat vào một kênh cụ thể</p>
-	    <p><b>7. Lệnh autorole</b></p>
+            <p>Sử dụng để khóa ngăn chặn người dùng chat vào một kênh cụ thể</p>
+            <p><b>7. Lệnh autorole</b></p>
             <p><code>h!autorole [người dùng]</code></p>
-	    <p>Sử dụng để tự động thêm một vai trò cụ thể cho mọi người dùng khi tham gia</p>
-	    <p><code>h!autorole off</code></p>
-	    <p>Sử dụng để tắt tự động thêm một vai trò cụ thể cho mọi người dùng khi tham gia</p>
+            <p>Sử dụng để tự động thêm một vai trò cụ thể cho mọi người dùng khi tham gia</p>
+            <p><code>h!autorole off</code></p>
+            <p>Sử dụng để tắt tự động thêm một vai trò cụ thể cho mọi người dùng khi tham gia</p>
 
             <h3 id="about">Thông tin bot</h3>
-	    <p><b>Tác giả:</b> <code>Hoyuuna</code></p>
-	    <p><b>Hosting:</b> <code>Pylex Nodes</code></p>
-	    <p><b>AI:</b> <code>NVIDIA/meta/llama-3.1-405b-instruct</code></p>
+            <p><b>Tác giả:</b> <code>Hoyuuna</code></p>
+            <p><b>Hosting:</b> <code>Pylex Nodes</code></p>
+            <p><b>AI:</b> <code>NVIDIA/meta/llama-3.1-405b-instruct</code></p>
         </div>
     </div>
 
-  
     <footer>
         <p>© 2025 Hoyuuna. Tất cả quyền được bảo lưu.</p>
     </footer>
